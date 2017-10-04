@@ -1,5 +1,6 @@
 # USAGE
 # python pyramid.py --image images/rubberducky.jpg
+#Credit to https://www.pyimagesearch.com/2015/03/23/sliding-windows-for-object-detection-with-python-and-opencv/
 
 import argparse
 import cv2
@@ -48,7 +49,7 @@ image = cv2.imread(args["image"])
 # loop over the image pyramid
 for resized in pyramid(image, scale=1.5):
     # loop over the sliding window for each layer of the pyramid
-    for (x, y, window) in sliding_window(resized, step_size=32, window_size=(winW, winH)):
+    for (x, y, window) in sliding_window(resized, step_size=16, window_size=(winW, winH)):
         # if the window does not meet our desired window size, ignore it
         if window.shape[0] != winH or window.shape[1] != winW:
             continue
