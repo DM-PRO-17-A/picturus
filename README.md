@@ -1,3 +1,3 @@
 # picturus
 
-Webcam functionality for the PYNQ board
+Webcam functionality for the PYNQ board.

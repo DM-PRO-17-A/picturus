@@ -1,5 +1,8 @@
 from PIL import Image
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('TkAgg')
+from matplotlib.pyplot import imshow
 import numpy as np
 
 img = Image.open("pics/50.jpg")
@@ -14,3 +17,4 @@ plt.show()
 
 # qnn = pickle.load(open("mnist-w1a1.pickle", "rb"))
 # qnn
+
