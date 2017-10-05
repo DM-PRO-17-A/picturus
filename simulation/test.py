@@ -1,20 +1,10 @@
 from PIL import Image
-import matplotlib.pyplot as plt
 import matplotlib
-matplotlib.use('TkAgg')
 from matplotlib.pyplot import imshow
 import numpy as np
 from IPython.display import display
 from QNN.layers import *
 import pickle
-
-
-# img = Image.open("pics/50.jpg")
-# img = img.convert("L")
-# img = np.asarray(img)
-# # % matplotlib inline
-# plt.imshow(img, cmap='gray')
-# plt.show()
 
 
 qnn = pickle.load(open("gtsrb-w1.pickle", "rb"))
@@ -40,7 +30,7 @@ gtsrb_classes = ['20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '70 Km/h', '80 Km/h
 def prepare_gtsrb(img):
     # make sure the image is the size expected by the network
     img = img.resize((32, 32))
-    display(img)
+    #display(img)
     # convert to numpy array
     img = np.asarray(img)
     # we need the data layout to be (channels, rows, columns)
@@ -64,9 +54,15 @@ def gtsrb_predict(img):
     # so we can interpret them as probabilities
     winner_prob = 100 * res[winner_ind]
     print("The QNN predicts this is a %s sign with %f percent probability" % (winner_class, winner_prob))
+    print(res)
 
     
 img = prepare_gtsrb(Image.open("pics/50.jpg"))
-
+img2 = prepare_gtsrb(Image.open("pics/left.jpg"))
+img3 = prepare_gtsrb(Image.open("pics/right.jpg"))
+img4 = prepare_gtsrb(Image.open("pics/stop.jpg"))
 
 gtsrb_predict(img)
+gtsrb_predict(img2)
+gtsrb_predict(img3)
+gtsrb_predict(img4)
