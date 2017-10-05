@@ -1,0 +1,16 @@
+* Notes on things to remember and consider
+  General notes on topics that are important to remember
+  Kind of a TODO
+** Centered pictures
+   It seems that the QNN struggles a lot with recognising signs that aren't completely
+   within the 32x32 picture
+** Test pictures
+   Need to create different versions of the pictures of the signs to test with
+*** Variations
+    Rotation
+    From the side
+    Out on the egdes/less visible
+** Overview
+   Ane will draw pictures of the overview of the simulation
+** Seize the means of production
+   Get pictures from the camera when that part is ready
