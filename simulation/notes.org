@@ -4,6 +4,8 @@
 ** Centered pictures
    It seems that the QNN struggles a lot with recognising signs that aren't completely
    within the 32x32 picture
+   It is not enough that it is centered, the sign must also be within the
+   boundaries of the picture
 ** Test pictures
    Need to create different versions of the pictures of the signs to test with
 *** Variations
@@ -14,3 +16,7 @@
    Ane will draw pictures of the overview of the simulation
 ** Seize the means of production
    Get pictures from the camera when that part is ready
+** Observations
+   Size and brightness is less important than centered traffic signs
+   QNN har godt nattesyn!
+   Se tolkning av stoptest2.jpg og stoptest3.jpg
