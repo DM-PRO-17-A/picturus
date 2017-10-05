@@ -49,19 +49,28 @@ def gtsrb_predict(img):
     # classes array to map to a human-readable string
     winner_ind = np.argmax(res)
     winner_class = gtsrb_classes[winner_ind]
+    res[winner_ind] -= 1
+    second_ind = np.argmax(res)
+    second_class = gtsrb_classes[second_ind]
+
     # the sum of the output values add up to 1 due to softmax,
     # so we can interpret them as probabilities
-    winner_prob = 100 * res[winner_ind]
+    winner_prob = 100 * res[winner_ind] + 100
+    second_prob = 100 * res[second_ind]
     print("The QNN predicts this is a %s sign with %f percent probability" % (winner_class, winner_prob))
-    print(res)
+    print("The QNN predicts this is a %s sign with %f percent probability" %
+            (second_class, second_prob))
+    #print(res)
 
     
-img = prepare_gtsrb(Image.open("pics/50.jpg"))
-img2 = prepare_gtsrb(Image.open("pics/left.jpg"))
-img3 = prepare_gtsrb(Image.open("pics/right.jpg"))
-img4 = prepare_gtsrb(Image.open("pics/stop.jpg"))
+#img = prepare_gtsrb(Image.open("pics/50.jpg"))
+#img2 = prepare_gtsrb(Image.open("pics/left.jpg"))
+#img3 = prepare_gtsrb(Image.open("pics/right.jpg"))
+#img4 = prepare_gtsrb(Image.open("pics/stop.jpg"))
+img5 = prepare_gtsrb(Image.open("test_pics/stop95.jpg"))
 
-gtsrb_predict(img)
-gtsrb_predict(img2)
-gtsrb_predict(img3)
-gtsrb_predict(img4)
+#gtsrb_predict(img)
+#gtsrb_predict(img2)
+#gtsrb_predict(img3)
+#gtsrb_predict(img4)
+gtsrb_predict(img5)
