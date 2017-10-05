@@ -8,6 +8,7 @@ from IPython.display import display
 from QNN.layers import *
 import pickle
 
+
 # img = Image.open("pics/50.jpg")
 # img = img.convert("L")
 # img = np.asarray(img)
@@ -16,7 +17,8 @@ import pickle
 # plt.show()
 
 
-qnn = pickle.load(open("mnist-w1a1.pickle", "rb"))
+qnn = pickle.load(open("gtsrb-w1a1.pickle", "rb"))
+
 
 gtsrb_classes = ['20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '70 Km/h', '80 Km/h',
                  'End 80 Km/h', '100 Km/h', '120 Km/h', 'No overtaking',
