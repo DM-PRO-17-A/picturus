@@ -1,7 +1,7 @@
 from PIL import Image
+import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
 from matplotlib.pyplot import imshow
 import numpy as np
 from IPython.display import display
@@ -17,7 +17,7 @@ import pickle
 # plt.show()
 
 
-qnn = pickle.load(open("gtsrb-w1a1.pickle", "rb"))
+qnn = pickle.load(open("gtsrb-w1.pickle", "rb"))
 
 
 gtsrb_classes = ['20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '70 Km/h', '80 Km/h',
