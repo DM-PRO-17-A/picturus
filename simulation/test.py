@@ -1,7 +1,7 @@
 from PIL import Image
-import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
 from matplotlib.pyplot import imshow
 import numpy as np
 from IPython.display import display
