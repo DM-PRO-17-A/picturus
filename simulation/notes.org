@@ -20,3 +20,29 @@
    Size and brightness is less important than centered traffic signs
    QNN har godt nattesyn!
    Se tolkning av stoptest2.jpg og stoptest3.jpg
+
+
+
+* Timeline
+  Deadlines for when we want to have completed tasks
+** Mon 09/10
+*** More test cases
+    More pictures to test with the QNN
+*** Output values
+    Look at which values we can expect
+    What should be the cut-off?
+*** Cleaner code
+    Something something current year
+** Mon 16/10
+*** Signals
+    Which signals to send to the PCB?
+    Dependent on the output values we've found
+*** "Complete system"
+    If the webcam part is more or less functional, we can create a more complete system
+**** Real world to motors
+     Object -> picture -> preprocessing -> QNN -> signal -> reaction
+** Onwards
+   Improve the simulation
+   Hard to say anything in particular until we know what we have to work with
+*** Work on other features?
+    If there's not that much to be done, maybe help out with other parts of the project
