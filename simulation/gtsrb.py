@@ -1,9 +1,13 @@
 import numpy as np
-from QNN.layers import *
 import pickle
+from QNN.layers import *
+# TODO: find a way to print pretty colors in predict
+# Maybe install termcolor?
+# from termcolor import colored
 
 
 qnn = pickle.load(open("gtsrb-w1a1.pickle", "rb"))
+
 
 gtsrb_classes = ['20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '70 Km/h', '80 Km/h',
                  'End 80 Km/h', '100 Km/h', '120 Km/h', 'No overtaking',
@@ -25,7 +29,6 @@ gtsrb_classes = ['20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '70 Km/h', '80 Km/h
 def prepare_gtsrb(img):
     # make sure the image is the size expected by the network
     img = img.resize((32, 32))
-    #display(img)
     # convert to numpy array
     img = np.asarray(img)
     # we need the data layout to be (channels, rows, columns)
@@ -56,4 +59,3 @@ def gtsrb_predict(img):
     print("The QNN predicts this is a %s sign with %f percent probability" % (winner_class, winner_prob))
     print("It could also be a %s sign with %f percent probability" %
             (second_class, second_prob))
-    #print(res)
