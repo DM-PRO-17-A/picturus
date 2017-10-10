@@ -5,12 +5,14 @@
 import argparse
 import cv2
 import imutils
-
 import timeit
+import uuid
+from datetime import datetime
+
 start_time = timeit.default_timer()
 
 
-def pyramid(image, scale=1.5, min_size=(30, 30)):
+def pyramid(image, scale=1.5, min_size=(32, 32)):
     # yield the original image
     yield image
 
@@ -48,21 +50,27 @@ image = cv2.imread(args["image"])
 
 # loop over the image pyramid
 for resized in pyramid(image, scale=1.5):
+    counter = 0
     # loop over the sliding window for each layer of the pyramid
     for (x, y, window) in sliding_window(resized, step_size=16, window_size=(winW, winH)):
         # if the window does not meet our desired window size, ignore it
         if window.shape[0] != winH or window.shape[1] != winW:
             continue
+        counter += 1
+        unique_filename = str(datetime.now())
+        clone = window.copy()
+        #path = '/home/embrik/Datamaskinprosjekt/picturus/pyramid/test_images'
+        cv2.imwrite('./test_images/' + unique_filename + 'test' + str(counter) + '.jpg', clone)
 
         # THIS IS WHERE YOU WOULD PROCESS YOUR WINDOW, SUCH AS APPLYING A
         # MACHINE LEARNING CLASSIFIER TO CLASSIFY THE CONTENTS OF THE
         # WINDOW
 
         # since we do not have a classifier, we'll just draw the window
-        clone = resized.copy()
-        cv2.rectangle(clone, (x, y), (x + winW, y + winH), (0, 255, 0), 2)
-        cv2.imshow("Window", clone)
-        cv2.waitKey(1)
+        # clone = resized.copy()
+        # cv2.rectangle(clone, (x, y), (x + winW, y + winH), (0, 255, 0), 2)
+        # cv2.imshow("Window", clone)
+        # cv2.waitKey(1)
 
 
 print(timeit.default_timer() - start_time)
