@@ -1,6 +1,7 @@
 from PIL import Image
 from gtsrb import *
 import daughter_card as pcb
+from time import sleep
 # Maybe install termcolor for colored output?
 # from termcolor import colored
 
@@ -28,12 +29,15 @@ for pics in tests:
 
 while True:
     print "Drive"
-    print "Get random picture"
+    sleep(3)
+    print "Get random picture (currently just one picture)"
     fsm = fsm_states[1]
+    pic = prepare_gtsrb(Image.open("pics/50.jpg"))
     print "Send to QNN"
     # Dependent on what the QNN says, set fsm to either 2 or 3
+    sign = gtsrb_predict(pic)
     print "Send conclusion to daughter card"
-    pcb.send()
+    pcb.send(sign)
     fsm = fsm_states[4]
     print "Sign action carried through"
     pcb.receive()

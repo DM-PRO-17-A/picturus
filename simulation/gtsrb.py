@@ -59,3 +59,4 @@ def gtsrb_predict(img):
     print("The QNN predicts this is a %s sign with %f percent probability" % (winner_class, winner_prob))
     print("It could also be a %s sign with %f percent probability" %
             (second_class, second_prob))
+    return winner_class

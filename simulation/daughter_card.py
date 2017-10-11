@@ -1,5 +1,5 @@
-def send():
-    print "Send"
+def send(result):
+    print result
 
 def receive():
     print "Receive"
