@@ -1,6 +1,6 @@
 from PIL import Image
 from gtsrb import *
-import daughter_card as pcb
+from daughter_card import Daughter_Card
 from time import sleep
 from random import randrange
 # Maybe install termcolor for colored output?
@@ -8,6 +8,7 @@ from random import randrange
 
 fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
 fsm = fsm_states[0]
+pcb = Daughter_Card()
 
 
 def open_images(pics):
@@ -34,10 +35,11 @@ while True:
 
     print "Get random picture"
     fsm = fsm_states[1]
-    pic = test_case_normal_signs[randrange(0, len(test_case_normal_signs))][1]
+    pic = test_case_normal_signs[randrange(0, len(test_case_normal_signs))]
+    print "The chosen picture is " + pic[0]
 
     print "Send to QNN"
-    res = gtsrb_predict(pic)
+    res = gtsrb_predict(pic[1])
 
     print "Send result array to daughter card"
     fsm = fsm_states[pcb.send(res)]
@@ -45,14 +47,4 @@ while True:
     if fsm != "driving":
         print "Wait for daughter card to perform action"
         pcb.receive()
-    
-    
-    # print "Send conclusion to daughter card"
-    # fsm = fsm_states[pcb.send(sign)]
-    # print "Wait for action to be completed"
-    # pcb.receive(fsm)
-    # fsm = fsm_states[4]
-    # print "Sign action carried through"
-    # print "Keep driving"
-    # fsm = fsm_states[0]
-    # break
+        print "Action performed"

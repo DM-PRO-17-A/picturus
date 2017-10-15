@@ -45,19 +45,3 @@ def gtsrb_predict(img):
     # get the predictions array
     res = predict(qnn, img)
     return res
-    # return the index of the largest prediction, then use the
-    # classes array to map to a human-readable string
-    # winner_ind = np.argmax(res)
-    # winner_class = gtsrb_classes[winner_ind]
-    # res[winner_ind] -= 1
-    # second_ind = np.argmax(res)
-    # second_class = gtsrb_classes[second_ind]
-
-    # the sum of the output values add up to 1 due to softmax,
-    # so we can interpret them as probabilities
-    # winner_prob = 100 * res[winner_ind] + 100
-    # second_prob = 100 * res[second_ind]
-    # print("The QNN predicts this is a %s sign with %f percent probability" % (winner_class, winner_prob))
-    # print("It could also be a %s sign with %f percent probability" %
-            # (second_class, second_prob))
-    return winner_class
