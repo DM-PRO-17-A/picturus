@@ -1,8 +1,14 @@
+# Open images
 from PIL import Image
+# Contains functions for using the QNN
 from gtsrb import *
 from daughter_card import Daughter_Card
+# For simulation purposes
 from time import sleep
 from random import randrange
+
+
+
 # Maybe install termcolor for colored output?
 # from termcolor import colored
 
@@ -30,6 +36,7 @@ tests = (test_case_normal_signs, test_case_zoom, test_case_partially_covered)
 
 
 while True:
+    break
     print "Drive"
     sleep(3)
 
@@ -48,3 +55,21 @@ while True:
         print "Wait for daughter card to perform action"
         pcb.receive()
         print "Action performed"
+
+        
+# Code example of how to get all files from a directory
+# We want to look at all the pictures taken at a given time
+from os import walk
+path = "pics/"
+
+pics = []
+for (dirpath, dirnames, filenames) in walk(path):
+    for filename in filenames:
+        pics.append(path + filename)
+    break
+print pics
+
+# Use with average
+average_result = [0] * 43
+# Update for each picture, each frame?
+# How to decay?
