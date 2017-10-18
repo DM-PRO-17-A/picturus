@@ -46,7 +46,7 @@ args = vars(ap.parse_args())
 
 # load the image and define the window width and height
 image = cv2.imread(args["image"])
-(winW, winH) = (128, 128)
+(winW, winH) = (32, 32)
 
 # loop over the image pyramid
 for resized in pyramid(image, scale=1.5):

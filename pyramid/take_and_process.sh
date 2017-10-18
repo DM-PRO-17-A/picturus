@@ -2,9 +2,9 @@
 
 counter=1
 
-while [ $counter -le 10 ]
+while [ $counter -le 1 ]
 do
-    filepath=$(python /home/embrik/Datamaskinprosjekt/picturus/pyramid/fspyramid.py)
+    filepath=$(python fspyramid.py)
     echo $filepath
     python pyramid.py --image $filepath
     ((counter++))
