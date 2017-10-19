@@ -1,0 +1,144 @@
+80 Km/h with probability 23%
+No overtaking with probability 1%
+No overtaking for large trucks with probability 3%
+Prohibited for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 1%
+Bend to left with probability 3%
+Road narrows (right) with probability 1%
+Road works with probability 5%
+Bicycles prohibited with probability 1%
+Wild animals with probability 48%
+Turn right ahead with probability 3%
+Pass by on left with probability 1%
+
+
+20 Km/h with probability 1%
+50 Km/h with probability 3%
+No overtaking for large trucks with probability 5%
+Bend to left with probability 1%
+Wild animals with probability 78%
+Pass by on left with probability 4%
+
+
+No overtaking with probability 1%
+No overtaking for large trucks with probability 7%
+Bend to left with probability 4%
+Road narrows (right) with probability 1%
+Road works with probability 2%
+Wild animals with probability 74%
+Ahead or left only with probability 1%
+Pass by on left with probability 5%
+
+
+50 Km/h with probability 10%
+No overtaking with probability 3%
+Bend to right with probability 28%
+Uneven road with probability 1%
+Road narrows (right) with probability 1%
+Road works with probability 2%
+Pedestrians in road ahead with probability 1%
+Children crossing ahead with probability 1%
+Ahead or left only with probability 1%
+Pass by on right with probability 3%
+Pass by on left with probability 38%
+
+
+50 Km/h with probability 98%
+80 Km/h with probability 1%
+
+
+50 Km/h with probability 97%
+80 Km/h with probability 1%
+
+
+20 Km/h with probability 25%
+30 Km/h with probability 49%
+50 Km/h with probability 11%
+70 Km/h with probability 1%
+End 80 Km/h with probability 1%
+120 Km/h with probability 1%
+Children crossing ahead with probability 4%
+Turn right ahead with probability 2%
+
+
+20 Km/h with probability 9%
+30 Km/h with probability 39%
+50 Km/h with probability 23%
+70 Km/h with probability 6%
+End 80 Km/h with probability 15%
+Ahead or right only with probability 2%
+
+
+30 Km/h with probability 98%
+
+
+50 Km/h with probability 28%
+120 Km/h with probability 41%
+Priority crossroad with probability 2%
+Give way with probability 12%
+No entry for vehicular traffic with probability 2%
+Turn left ahead with probability 4%
+Pass by on right with probability 1%
+Roundabout with probability 1%
+
+
+Danger Ahead with probability 93%
+Bend to right with probability 2%
+Children crossing ahead with probability 1%
+
+
+No overtaking for large trucks with probability 3%
+No vehicles with probability 2%
+Danger Ahead with probability 51%
+Bend to right with probability 15%
+Uneven road with probability 7%
+Road works with probability 1%
+Traffic signals with probability 14%
+Bicycles prohibited with probability 1%
+
+
+Give way with probability 95%
+
+
+30 Km/h with probability 8%
+50 Km/h with probability 12%
+No overtaking for large trucks with probability 32%
+Priority crossroad with probability 1%
+Priority road with probability 1%
+Wild animals with probability 42%
+End of no-overtaking zone for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 1%
+
+
+20 Km/h with probability 3%
+No overtaking with probability 1%
+No overtaking for large trucks with probability 1%
+Priority crossroad with probability 46%
+No entry for vehicular traffic with probability 2%
+Uneven road with probability 1%
+Children crossing ahead with probability 1%
+Bicycles prohibited with probability 16%
+Wild animals with probability 2%
+End of all speed and overtaking restrictions with probability 1%
+Turn right ahead with probability 8%
+Ahead only with probability 4%
+Ahead or right only with probability 1%
+Roundabout with probability 2%
+
+
+70 Km/h with probability 97%
+No entry for vehicular traffic with probability 1%
+
+50 Km/h with probability 15%
+No overtaking for large trucks with probability 1%
+Priority crossroad with probability 1%
+Bend to right with probability 1%
+Uneven road with probability 2%
+Road narrows (right) with probability 32%
+Road works with probability 2%
+Pedestrians in road ahead with probability 41%
+
+120 Km/h with probability 99%
+
+Danger Ahead with probability 99%
+
+Children crossing ahead with probability 99%
+
