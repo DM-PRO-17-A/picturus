@@ -1,0 +1,196 @@
+Results for 20-signs: 
+
+	 Results for tests/speed/20/00243.ppm:
+		QNN predicts 20 Km/h with probability 32%
+		QNN predicts 70 Km/h with probability 65%
+
+	 Results for tests/speed/20/00252.ppm:
+		QNN predicts 20 Km/h with probability 72%
+		QNN predicts 70 Km/h with probability 23%
+		QNN predicts 120 Km/h with probability 3%
+
+	 Results for tests/speed/20/00403.ppm:
+		QNN predicts 20 Km/h with probability 70%
+		QNN predicts 70 Km/h with probability 27%
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/speed/20/00579.ppm:
+		QNN predicts 20 Km/h with probability 92%
+		QNN predicts 30 Km/h with probability 6%
+
+	 Results for tests/speed/20/00675.ppm:
+		QNN predicts 20 Km/h with probability 89%
+		QNN predicts 30 Km/h with probability 2%
+		QNN predicts 70 Km/h with probability 8%
+
+	 Results for tests/speed/20/00778.ppm:
+		QNN predicts 20 Km/h with probability 95%
+		QNN predicts 70 Km/h with probability 3%
+
+	 Results for tests/speed/20/00794.ppm:
+		QNN predicts 20 Km/h with probability 19%
+		QNN predicts 30 Km/h with probability 13%
+		QNN predicts 50 Km/h with probability 54%
+		QNN predicts 70 Km/h with probability 2%
+		QNN predicts End 80 Km/h with probability 2%
+		QNN predicts No overtaking with probability 2%
+		QNN predicts Ahead or left only with probability 1%
+
+	 Results for tests/speed/20/00807.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/00809.ppm:
+		QNN predicts 20 Km/h with probability 72%
+		QNN predicts 30 Km/h with probability 22%
+		QNN predicts 70 Km/h with probability 4%
+
+	 Results for tests/speed/20/00943.ppm:
+		QNN predicts 20 Km/h with probability 84%
+		QNN predicts 70 Km/h with probability 14%
+
+	 Results for tests/speed/20/00990.ppm:
+		QNN predicts 20 Km/h with probability 19%
+		QNN predicts 30 Km/h with probability 2%
+		QNN predicts 70 Km/h with probability 76%
+
+	 Results for tests/speed/20/01279.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/01519.ppm:
+		QNN predicts 20 Km/h with probability 48%
+		QNN predicts 30 Km/h with probability 37%
+		QNN predicts 50 Km/h with probability 4%
+		QNN predicts 70 Km/h with probability 8%
+
+	 Results for tests/speed/20/01853.ppm:
+		QNN predicts 20 Km/h with probability 74%
+		QNN predicts 30 Km/h with probability 16%
+		QNN predicts 70 Km/h with probability 3%
+		QNN predicts 80 Km/h with probability 4%
+
+	 Results for tests/speed/20/02045.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/02160.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/02752.ppm:
+		QNN predicts 20 Km/h with probability 95%
+		QNN predicts 30 Km/h with probability 2%
+		QNN predicts 70 Km/h with probability 2%
+
+	 Results for tests/speed/20/02930.ppm:
+		QNN predicts 20 Km/h with probability 98%
+		QNN predicts 70 Km/h with probability 1%
+
+	 Results for tests/speed/20/03009.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/03281.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/03340.ppm:
+		QNN predicts 20 Km/h with probability 98%
+
+	 Results for tests/speed/20/03420.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/03474.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/03677.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/03779.ppm:
+		QNN predicts 20 Km/h with probability 23%
+		QNN predicts 30 Km/h with probability 76%
+
+	 Results for tests/speed/20/03922.ppm:
+		QNN predicts 20 Km/h with probability 31%
+		QNN predicts 70 Km/h with probability 67%
+
+	 Results for tests/speed/20/04012.ppm:
+		QNN predicts 20 Km/h with probability 59%
+		QNN predicts 30 Km/h with probability 23%
+		QNN predicts 50 Km/h with probability 3%
+		QNN predicts 70 Km/h with probability 11%
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/speed/20/04504.ppm:
+		QNN predicts 20 Km/h with probability 96%
+		QNN predicts 120 Km/h with probability 2%
+
+	 Results for tests/speed/20/04512.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/04570.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/04605.ppm:
+		QNN predicts 20 Km/h with probability 10%
+		QNN predicts 70 Km/h with probability 89%
+
+	 Results for tests/speed/20/04795.ppm:
+		QNN predicts 20 Km/h with probability 55%
+		QNN predicts 30 Km/h with probability 32%
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 9%
+
+	 Results for tests/speed/20/05945.ppm:
+		QNN predicts 20 Km/h with probability 87%
+		QNN predicts 30 Km/h with probability 2%
+		QNN predicts 70 Km/h with probability 5%
+		QNN predicts 120 Km/h with probability 5%
+
+	 Results for tests/speed/20/06002.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/06116.ppm:
+		QNN predicts 20 Km/h with probability 71%
+		QNN predicts 30 Km/h with probability 6%
+		QNN predicts 70 Km/h with probability 20%
+
+	 Results for tests/speed/20/06421.ppm:
+		QNN predicts 20 Km/h with probability 97%
+		QNN predicts 30 Km/h with probability 1%
+
+	 Results for tests/speed/20/06639.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/07712.ppm:
+		QNN predicts 20 Km/h with probability 83%
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 14%
+
+	 Results for tests/speed/20/09117.ppm:
+		QNN predicts 20 Km/h with probability 68%
+		QNN predicts 70 Km/h with probability 27%
+		QNN predicts 120 Km/h with probability 2%
+
+	 Results for tests/speed/20/10381.ppm:
+		QNN predicts 20 Km/h with probability 45%
+		QNN predicts 30 Km/h with probability 44%
+		QNN predicts 70 Km/h with probability 9%
+
+	 Results for tests/speed/20/10406.ppm:
+		QNN predicts 20 Km/h with probability 99%
+
+	 Results for tests/speed/20/10536.ppm:
+		QNN predicts 20 Km/h with probability 93%
+		QNN predicts 30 Km/h with probability 6%
+
+	 Results for tests/speed/20/11804.ppm:
+		QNN predicts 20 Km/h with probability 94%
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 70 Km/h with probability 4%
+
+	 Results for tests/speed/20/11873.ppm:
+		QNN predicts 20 Km/h with probability 97%
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 70 Km/h with probability 1%
+
+	 Results for tests/speed/20/12614.ppm:
+		QNN predicts 20 Km/h with probability 7%
+		QNN predicts 120 Km/h with probability 92%
+

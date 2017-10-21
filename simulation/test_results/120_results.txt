@@ -1,0 +1,443 @@
+Results for 120-signs: 
+
+	 Results for tests/speed/120/00039.ppm:
+		QNN predicts 120 Km/h with probability 98%
+
+	 Results for tests/speed/120/00049.ppm:
+		QNN predicts 20 Km/h with probability 2%
+		QNN predicts 30 Km/h with probability 84%
+		QNN predicts 80 Km/h with probability 9%
+		QNN predicts Stop with probability 1%
+
+	 Results for tests/speed/120/00123.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00180.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00196.ppm:
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 97%
+
+	 Results for tests/speed/120/00228.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00247.ppm:
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 4%
+		QNN predicts 120 Km/h with probability 72%
+		QNN predicts No overtaking with probability 11%
+		QNN predicts Prohibited for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 1%
+		QNN predicts Turn left ahead with probability 1%
+		QNN predicts Pass by on right with probability 4%
+
+	 Results for tests/speed/120/00320.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00328.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00438.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00449.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00457.ppm:
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 98%
+
+	 Results for tests/speed/120/00470.ppm:
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts 100 Km/h with probability 2%
+		QNN predicts 120 Km/h with probability 95%
+
+	 Results for tests/speed/120/00510.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00518.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00540.ppm:
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts 80 Km/h with probability 68%
+		QNN predicts 120 Km/h with probability 25%
+		QNN predicts Ahead or left only with probability 1%
+
+	 Results for tests/speed/120/00557.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00571.ppm:
+		QNN predicts 100 Km/h with probability 3%
+		QNN predicts 120 Km/h with probability 95%
+
+	 Results for tests/speed/120/00627.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00633.ppm:
+		QNN predicts 70 Km/h with probability 2%
+		QNN predicts 120 Km/h with probability 96%
+
+	 Results for tests/speed/120/00641.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00679.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00697.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00817.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/00975.ppm:
+		QNN predicts 70 Km/h with probability 30%
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 67%
+
+	 Results for tests/speed/120/01010.ppm:
+		QNN predicts 100 Km/h with probability 5%
+		QNN predicts 120 Km/h with probability 94%
+
+	 Results for tests/speed/120/01031.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01036.ppm:
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 98%
+
+	 Results for tests/speed/120/01070.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01085.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01106.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01116.ppm:
+		QNN predicts 20 Km/h with probability 3%
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 94%
+
+	 Results for tests/speed/120/01127.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01140.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01188.ppm:
+		QNN predicts 20 Km/h with probability 5%
+		QNN predicts 80 Km/h with probability 2%
+		QNN predicts 100 Km/h with probability 4%
+		QNN predicts 120 Km/h with probability 83%
+		QNN predicts Prohibited for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 3%
+
+	 Results for tests/speed/120/01198.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01252.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01261.ppm:
+		QNN predicts 30 Km/h with probability 44%
+		QNN predicts 50 Km/h with probability 5%
+		QNN predicts 80 Km/h with probability 6%
+		QNN predicts 120 Km/h with probability 41%
+		QNN predicts No vehicles with probability 1%
+
+	 Results for tests/speed/120/01275.ppm:
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 91%
+		QNN predicts No vehicles with probability 1%
+		QNN predicts Risk of snow or ice with probability 2%
+
+	 Results for tests/speed/120/01288.ppm:
+		QNN predicts 100 Km/h with probability 3%
+		QNN predicts 120 Km/h with probability 96%
+
+	 Results for tests/speed/120/01311.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01345.ppm:
+		QNN predicts 70 Km/h with probability 5%
+		QNN predicts 80 Km/h with probability 11%
+		QNN predicts 100 Km/h with probability 7%
+		QNN predicts 120 Km/h with probability 75%
+
+	 Results for tests/speed/120/01353.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01362.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01376.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01390.ppm:
+		QNN predicts 70 Km/h with probability 3%
+		QNN predicts 80 Km/h with probability 3%
+		QNN predicts 100 Km/h with probability 12%
+		QNN predicts 120 Km/h with probability 75%
+		QNN predicts Ahead or left only with probability 1%
+
+	 Results for tests/speed/120/01433.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01448.ppm:
+		QNN predicts 20 Km/h with probability 5%
+		QNN predicts 120 Km/h with probability 94%
+
+	 Results for tests/speed/120/01466.ppm:
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 98%
+
+	 Results for tests/speed/120/01484.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01499.ppm:
+		QNN predicts 20 Km/h with probability 33%
+		QNN predicts 80 Km/h with probability 3%
+		QNN predicts 120 Km/h with probability 62%
+
+	 Results for tests/speed/120/01501.ppm:
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 98%
+
+	 Results for tests/speed/120/01502.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01520.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01521.ppm:
+		QNN predicts 120 Km/h with probability 98%
+
+	 Results for tests/speed/120/01595.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01605.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01608.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01644.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01708.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01748.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01793.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01816.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01887.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01920.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01931.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01936.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/01945.ppm:
+		QNN predicts 100 Km/h with probability 14%
+		QNN predicts 120 Km/h with probability 85%
+
+	 Results for tests/speed/120/02016.ppm:
+		QNN predicts 80 Km/h with probability 45%
+		QNN predicts 120 Km/h with probability 19%
+		QNN predicts No overtaking for large trucks with probability 6%
+		QNN predicts End of no-overtaking zone for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 25%
+
+	 Results for tests/speed/120/02220.ppm:
+		QNN predicts 30 Km/h with probability 25%
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts 100 Km/h with probability 53%
+		QNN predicts 120 Km/h with probability 19%
+
+	 Results for tests/speed/120/02231.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02235.ppm:
+		QNN predicts 50 Km/h with probability 11%
+		QNN predicts 120 Km/h with probability 48%
+		QNN predicts No overtaking with probability 2%
+		QNN predicts No vehicles with probability 1%
+		QNN predicts Ahead or left only with probability 1%
+		QNN predicts Pass by on right with probability 31%
+		QNN predicts Roundabout with probability 1%
+
+	 Results for tests/speed/120/02338.ppm:
+		QNN predicts 120 Km/h with probability 98%
+
+	 Results for tests/speed/120/02368.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02402.ppm:
+		QNN predicts 80 Km/h with probability 8%
+		QNN predicts 120 Km/h with probability 89%
+
+	 Results for tests/speed/120/02409.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02413.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02421.ppm:
+		QNN predicts 100 Km/h with probability 5%
+		QNN predicts 120 Km/h with probability 94%
+
+	 Results for tests/speed/120/02439.ppm:
+		QNN predicts 70 Km/h with probability 10%
+		QNN predicts 120 Km/h with probability 88%
+
+	 Results for tests/speed/120/02534.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02665.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02780.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02788.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02799.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02821.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02844.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02845.ppm:
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 70 Km/h with probability 3%
+		QNN predicts 80 Km/h with probability 7%
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 84%
+
+	 Results for tests/speed/120/02882.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02940.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/02951.ppm:
+		QNN predicts 70 Km/h with probability 54%
+		QNN predicts 120 Km/h with probability 44%
+
+	 Results for tests/speed/120/03027.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03060.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03121.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03171.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03180.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03190.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03239.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03257.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03266.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03287.ppm:
+		QNN predicts 20 Km/h with probability 5%
+		QNN predicts 70 Km/h with probability 17%
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts 100 Km/h with probability 7%
+		QNN predicts 120 Km/h with probability 62%
+		QNN predicts No entry for vehicular traffic with probability 2%
+		QNN predicts Traffic signals with probability 1%
+
+	 Results for tests/speed/120/03312.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03411.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03450.ppm:
+		QNN predicts 100 Km/h with probability 5%
+		QNN predicts 120 Km/h with probability 94%
+
+	 Results for tests/speed/120/03453.ppm:
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 96%
+
+	 Results for tests/speed/120/03470.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03499.ppm:
+		QNN predicts 120 Km/h with probability 98%
+
+	 Results for tests/speed/120/03502.ppm:
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 98%
+
+	 Results for tests/speed/120/03543.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03554.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03575.ppm:
+		QNN predicts 100 Km/h with probability 3%
+		QNN predicts 120 Km/h with probability 96%
+
+	 Results for tests/speed/120/03576.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03607.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/03660.ppm:
+		QNN predicts 120 Km/h with probability 87%
+		QNN predicts No overtaking with probability 10%
+
+	 Results for tests/speed/120/03693.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/04909.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/04915.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/08618.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/08646.ppm:
+		QNN predicts 120 Km/h with probability 99%
+
+	 Results for tests/speed/120/08655.ppm:
+		QNN predicts 100 Km/h with probability 3%
+		QNN predicts 120 Km/h with probability 95%
+
+	 Results for tests/speed/120/08850.ppm:
+		QNN predicts 120 Km/h with probability 99%
+

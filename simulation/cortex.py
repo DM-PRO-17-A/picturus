@@ -7,13 +7,11 @@ from daughter_card import Daughter_Card
 from time import sleep
 from random import randrange
 
-
 # Code example of how to get all files from a directory
 # We want to look at all the pictures taken at a given time
 from os import walk
-#path = "pics/"
+path = "pics/"
 #path = "test_pics/test/"
-path = "../../../Downloads/GTSRB/Final_Test/Images/"
 
 pics = []
 for (dirpath, dirnames, filenames) in walk(path):

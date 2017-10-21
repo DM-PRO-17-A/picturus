@@ -1,0 +1,699 @@
+Results for stop-signs: 
+
+	 Results for tests/stop/00093.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00111.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00132.ppm:
+		QNN predicts 30 Km/h with probability 2%
+		QNN predicts Stop with probability 80%
+		QNN predicts No entry for vehicular traffic with probability 16%
+
+	 Results for tests/stop/00167.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00224.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00251.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00261.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00303.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00353.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00411.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00417.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00456.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00468.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00489.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00621.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00681.ppm:
+		QNN predicts Stop with probability 98%
+
+	 Results for tests/stop/00686.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00732.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00821.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/00963.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01020.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01074.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01145.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01196.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01199.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01223.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01239.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01269.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01277.ppm:
+		QNN predicts 60 Km/h with probability 6%
+		QNN predicts Stop with probability 76%
+		QNN predicts No entry for vehicular traffic with probability 2%
+		QNN predicts Danger Ahead with probability 3%
+		QNN predicts Uneven road with probability 3%
+		QNN predicts Road works with probability 1%
+		QNN predicts Ahead or right only with probability 3%
+
+	 Results for tests/stop/01292.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01302.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01324.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01423.ppm:
+		QNN predicts Stop with probability 98%
+
+	 Results for tests/stop/01425.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01533.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01588.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01659.ppm:
+		QNN predicts Stop with probability 98%
+
+	 Results for tests/stop/01766.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01796.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01826.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01848.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/01874.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02034.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02060.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02177.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02186.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02206.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02230.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02237.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02329.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02438.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02569.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02581.ppm:
+		QNN predicts Stop with probability 89%
+		QNN predicts No entry for vehicular traffic with probability 10%
+
+	 Results for tests/stop/02591.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02774.ppm:
+		QNN predicts 70 Km/h with probability 6%
+		QNN predicts Stop with probability 92%
+
+	 Results for tests/stop/02872.ppm:
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts Stop with probability 97%
+
+	 Results for tests/stop/02960.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/02992.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03094.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03127.ppm:
+		QNN predicts Give way with probability 1%
+		QNN predicts Stop with probability 97%
+
+	 Results for tests/stop/03131.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03134.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03154.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03286.ppm:
+		QNN predicts Stop with probability 98%
+
+	 Results for tests/stop/03307.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03325.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03403.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03412.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03449.ppm:
+		QNN predicts Stop with probability 98%
+		QNN predicts No entry for vehicular traffic with probability 1%
+
+	 Results for tests/stop/03508.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03546.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03550.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03594.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03601.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03647.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03651.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03664.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03667.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03668.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03674.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03708.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03809.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/03825.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04110.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04126.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04165.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04169.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04188.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04210.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04243.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04254.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04343.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04719.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04737.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04757.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04859.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04875.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04913.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/04943.ppm:
+		QNN predicts Stop with probability 98%
+
+	 Results for tests/stop/04964.ppm:
+		QNN predicts Stop with probability 98%
+
+	 Results for tests/stop/05051.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05054.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05080.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05112.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05142.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05190.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05213.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05232.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05311.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05367.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05407.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05535.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05653.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05783.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05880.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/05979.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06171.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06203.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06235.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06358.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06368.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06459.ppm:
+		QNN predicts Stop with probability 93%
+		QNN predicts No entry for vehicular traffic with probability 6%
+
+	 Results for tests/stop/06522.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06564.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06719.ppm:
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts Give way with probability 3%
+		QNN predicts Stop with probability 89%
+		QNN predicts No entry for vehicular traffic with probability 1%
+		QNN predicts Bicycles prohibited with probability 1%
+
+	 Results for tests/stop/06779.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06785.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06796.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06979.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/06985.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07062.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07180.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07215.ppm:
+		QNN predicts Stop with probability 97%
+		QNN predicts No entry for vehicular traffic with probability 2%
+
+	 Results for tests/stop/07274.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07294.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07310.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07385.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07457.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07458.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07465.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07490.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07529.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07534.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07825.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07874.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07888.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/07922.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08143.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08269.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08290.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08448.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08475.ppm:
+		QNN predicts 60 Km/h with probability 1%
+		QNN predicts Stop with probability 69%
+		QNN predicts No entry for vehicular traffic with probability 2%
+		QNN predicts Uneven road with probability 7%
+		QNN predicts Pass by on right with probability 14%
+
+	 Results for tests/stop/08476.ppm:
+		QNN predicts 120 Km/h with probability 4%
+		QNN predicts No overtaking with probability 5%
+		QNN predicts Stop with probability 64%
+		QNN predicts No vehicles with probability 7%
+		QNN predicts No entry for vehicular traffic with probability 10%
+		QNN predicts Traffic signals with probability 3%
+
+	 Results for tests/stop/08477.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08548.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08573.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08586.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08607.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08628.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08672.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08845.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08877.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/08884.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09003.ppm:
+		QNN predicts 20 Km/h with probability 1%
+		QNN predicts Stop with probability 84%
+		QNN predicts No entry for vehicular traffic with probability 9%
+		QNN predicts Danger Ahead with probability 1%
+
+	 Results for tests/stop/09005.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09264.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09316.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09344.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09360.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09375.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09532.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09567.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09585.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09629.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09642.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09643.ppm:
+		QNN predicts Stop with probability 96%
+		QNN predicts No entry for vehicular traffic with probability 2%
+
+	 Results for tests/stop/09664.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09678.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09742.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09839.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09867.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09923.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/09969.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10101.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10170.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10225.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10370.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10432.ppm:
+		QNN predicts Stop with probability 98%
+
+	 Results for tests/stop/10435.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10487.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10539.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10660.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10668.ppm:
+		QNN predicts 120 Km/h with probability 1%
+		QNN predicts Stop with probability 90%
+		QNN predicts Pass by on right with probability 5%
+
+	 Results for tests/stop/10907.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10954.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/10973.ppm:
+		QNN predicts 60 Km/h with probability 1%
+		QNN predicts Stop with probability 98%
+
+	 Results for tests/stop/10976.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11011.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11190.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11211.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11220.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11440.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11477.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11561.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11614.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11651.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11653.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11677.ppm:
+		QNN predicts Stop with probability 87%
+		QNN predicts No entry for vehicular traffic with probability 5%
+		QNN predicts Pass by on right with probability 5%
+
+	 Results for tests/stop/11707.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11892.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/11954.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/12013.ppm:
+		QNN predicts 30 Km/h with probability 8%
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts Stop with probability 89%
+
+	 Results for tests/stop/12017.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/12176.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/12201.ppm:
+		QNN predicts 120 Km/h with probability 1%
+		QNN predicts Stop with probability 97%
+
+	 Results for tests/stop/12242.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/12313.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/12460.ppm:
+		QNN predicts Stop with probability 99%
+
+	 Results for tests/stop/12505.ppm:
+		QNN predicts Stop with probability 99%
+

@@ -27,19 +27,19 @@ class Daughter_Card:
         
 
     def send(self, result):
-        f = open('probs.txt', 'a')
+        #f = open('probs.txt', 'a')
         temp_max = -1
         index = -1
         for i in range(len(result)):
-            if int(result[i]*100) != 0:
-                f.write(self.gtsrb_classes[i] + " with probability "+str(int(result[i]*100))+'%' '\n')
+            #if int(result[i]*100) != 0:
+            #    f.write(self.gtsrb_classes[i] + " with probability "+str(int(result[i]*100))+'%' '\n')
             if result[i] > temp_max:
                 temp_max = result[i]
                 index = i
                 sign = self.gtsrb_classes[index]
         print "\tPCB: the QNN predicts the sign is a " + sign + " with probability " + str(temp_max*100)
-        f.write('\n')
-        f.close()
+        #f.write('\n')
+        #f.close()
         if sign in self.blocking_signs:
             state = self.actions[2]
             return 3

@@ -1,0 +1,319 @@
+Results for no-signs: 
+
+	 Results for tests/no-sign2/IMG-437.jpg:
+		QNN predicts 20 Km/h with probability 7%
+		QNN predicts 30 Km/h with probability 4%
+		QNN predicts 60 Km/h with probability 1%
+		QNN predicts 70 Km/h with probability 10%
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts Stop with probability 1%
+
+	 Results for tests/no-sign2/IMG-438.jpg:
+		QNN predicts 20 Km/h with probability 2%
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 70 Km/h with probability 4%
+
+	 Results for tests/no-sign2/IMG-439.jpg:
+		QNN predicts 20 Km/h with probability 2%
+		QNN predicts 60 Km/h with probability 4%
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-440.jpg:
+		QNN predicts 20 Km/h with probability 6%
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 13%
+		QNN predicts 70 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-441.jpg:
+		QNN predicts 20 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 4%
+
+	 Results for tests/no-sign2/IMG-442.jpg:
+		QNN predicts 20 Km/h with probability 3%
+
+	 Results for tests/no-sign2/IMG-443.jpg:
+		QNN predicts 20 Km/h with probability 8%
+		QNN predicts 60 Km/h with probability 11%
+		QNN predicts 80 Km/h with probability 4%
+		QNN predicts Stop with probability 2%
+
+	 Results for tests/no-sign2/IMG-444.jpg:
+		QNN predicts 20 Km/h with probability 7%
+
+	 Results for tests/no-sign2/IMG-445.jpg:
+		QNN predicts 20 Km/h with probability 26%
+		QNN predicts 30 Km/h with probability 4%
+
+	 Results for tests/no-sign2/IMG-446.jpg:
+		QNN predicts 20 Km/h with probability 3%
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 29%
+		QNN predicts Stop with probability 1%
+
+	 Results for tests/no-sign2/IMG-447.jpg:
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 3%
+		QNN predicts 80 Km/h with probability 11%
+		QNN predicts Stop with probability 3%
+
+	 Results for tests/no-sign2/IMG-448.jpg:
+		QNN predicts Stop with probability 1%
+
+	 Results for tests/no-sign2/IMG-449.jpg:
+		QNN predicts 60 Km/h with probability 1%
+		QNN predicts 80 Km/h with probability 4%
+
+	 Results for tests/no-sign2/IMG-450.jpg:
+		QNN predicts 60 Km/h with probability 2%
+		QNN predicts 70 Km/h with probability 13%
+		QNN predicts 80 Km/h with probability 2%
+		QNN predicts Turn right ahead with probability 2%
+
+	 Results for tests/no-sign2/IMG-451.jpg:
+		QNN predicts 30 Km/h with probability 4%
+		QNN predicts 60 Km/h with probability 39%
+		QNN predicts 80 Km/h with probability 2%
+
+	 Results for tests/no-sign2/IMG-452.jpg:
+		QNN predicts 60 Km/h with probability 2%
+
+	 Results for tests/no-sign2/IMG-453.jpg:
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-454.jpg:
+
+	 Results for tests/no-sign2/IMG-455.jpg:
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 2%
+		QNN predicts Stop with probability 4%
+
+	 Results for tests/no-sign2/IMG-456.jpg:
+		QNN predicts 50 Km/h with probability 47%
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts Stop with probability 2%
+
+	 Results for tests/no-sign2/IMG-457.jpg:
+		QNN predicts 30 Km/h with probability 5%
+		QNN predicts 50 Km/h with probability 8%
+		QNN predicts 70 Km/h with probability 69%
+		QNN predicts Stop with probability 5%
+
+	 Results for tests/no-sign2/IMG-458.jpg:
+		QNN predicts 20 Km/h with probability 28%
+		QNN predicts 30 Km/h with probability 35%
+		QNN predicts 60 Km/h with probability 3%
+
+	 Results for tests/no-sign2/IMG-459.jpg:
+		QNN predicts 20 Km/h with probability 12%
+		QNN predicts 60 Km/h with probability 65%
+
+	 Results for tests/no-sign2/IMG-460.jpg:
+		QNN predicts 20 Km/h with probability 1%
+		QNN predicts 30 Km/h with probability 3%
+		QNN predicts 70 Km/h with probability 48%
+		QNN predicts 100 Km/h with probability 8%
+
+	 Results for tests/no-sign2/IMG-461.jpg:
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts 100 Km/h with probability 24%
+
+	 Results for tests/no-sign2/IMG-462.jpg:
+		QNN predicts 20 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 2%
+
+	 Results for tests/no-sign2/IMG-463.jpg:
+
+	 Results for tests/no-sign2/IMG-464.jpg:
+		QNN predicts 50 Km/h with probability 22%
+		QNN predicts 60 Km/h with probability 2%
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 2%
+		QNN predicts Stop with probability 4%
+
+	 Results for tests/no-sign2/IMG-465.jpg:
+		QNN predicts 20 Km/h with probability 1%
+		QNN predicts 30 Km/h with probability 18%
+		QNN predicts 50 Km/h with probability 20%
+		QNN predicts 70 Km/h with probability 26%
+		QNN predicts 120 Km/h with probability 1%
+		QNN predicts Stop with probability 13%
+
+	 Results for tests/no-sign2/IMG-466.jpg:
+		QNN predicts 20 Km/h with probability 11%
+		QNN predicts 30 Km/h with probability 8%
+		QNN predicts 70 Km/h with probability 59%
+		QNN predicts Stop with probability 5%
+
+	 Results for tests/no-sign2/IMG-467.jpg:
+		QNN predicts 20 Km/h with probability 9%
+		QNN predicts 30 Km/h with probability 4%
+		QNN predicts 60 Km/h with probability 2%
+		QNN predicts 70 Km/h with probability 9%
+		QNN predicts Stop with probability 2%
+		QNN predicts Turn right ahead with probability 1%
+
+	 Results for tests/no-sign2/IMG-468.jpg:
+		QNN predicts 20 Km/h with probability 9%
+		QNN predicts 60 Km/h with probability 1%
+		QNN predicts 80 Km/h with probability 3%
+		QNN predicts 100 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-469.jpg:
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts 100 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-470.jpg:
+		QNN predicts 60 Km/h with probability 1%
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts 100 Km/h with probability 4%
+
+	 Results for tests/no-sign2/IMG-471.jpg:
+		QNN predicts 20 Km/h with probability 10%
+		QNN predicts 30 Km/h with probability 2%
+		QNN predicts 70 Km/h with probability 35%
+		QNN predicts Stop with probability 3%
+
+	 Results for tests/no-sign2/IMG-472.jpg:
+		QNN predicts 20 Km/h with probability 4%
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 1%
+		QNN predicts 70 Km/h with probability 6%
+		QNN predicts Stop with probability 23%
+
+	 Results for tests/no-sign2/IMG-473.jpg:
+		QNN predicts 60 Km/h with probability 3%
+		QNN predicts Stop with probability 3%
+
+	 Results for tests/no-sign2/IMG-474.jpg:
+		QNN predicts 60 Km/h with probability 3%
+		QNN predicts 80 Km/h with probability 2%
+		QNN predicts 100 Km/h with probability 5%
+		QNN predicts Stop with probability 2%
+
+	 Results for tests/no-sign2/IMG-475.jpg:
+		QNN predicts 20 Km/h with probability 4%
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 1%
+		QNN predicts 70 Km/h with probability 3%
+		QNN predicts 80 Km/h with probability 11%
+		QNN predicts 100 Km/h with probability 21%
+		QNN predicts 120 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-476.jpg:
+		QNN predicts 60 Km/h with probability 4%
+		QNN predicts 80 Km/h with probability 34%
+		QNN predicts 100 Km/h with probability 4%
+
+	 Results for tests/no-sign2/IMG-477.jpg:
+
+	 Results for tests/no-sign2/IMG-478.jpg:
+		QNN predicts 50 Km/h with probability 25%
+		QNN predicts Stop with probability 2%
+
+	 Results for tests/no-sign2/IMG-479.jpg:
+		QNN predicts 20 Km/h with probability 2%
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 50 Km/h with probability 8%
+		QNN predicts 60 Km/h with probability 10%
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts Stop with probability 1%
+
+	 Results for tests/no-sign2/IMG-480.jpg:
+		QNN predicts 20 Km/h with probability 3%
+		QNN predicts 50 Km/h with probability 5%
+		QNN predicts Stop with probability 1%
+
+	 Results for tests/no-sign2/IMG-481.jpg:
+
+	 Results for tests/no-sign2/IMG-482.jpg:
+
+	 Results for tests/no-sign2/IMG-483.jpg:
+
+	 Results for tests/no-sign2/IMG-484.jpg:
+		QNN predicts 70 Km/h with probability 14%
+
+	 Results for tests/no-sign2/IMG-485.jpg:
+		QNN predicts 70 Km/h with probability 28%
+		QNN predicts Stop with probability 4%
+		QNN predicts Turn right ahead with probability 1%
+
+	 Results for tests/no-sign2/IMG-486.jpg:
+		QNN predicts 50 Km/h with probability 8%
+		QNN predicts 70 Km/h with probability 3%
+		QNN predicts Turn right ahead with probability 1%
+
+	 Results for tests/no-sign2/IMG-487.jpg:
+
+	 Results for tests/no-sign2/IMG-488.jpg:
+		QNN predicts 60 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-489.jpg:
+		QNN predicts 30 Km/h with probability 21%
+		QNN predicts 50 Km/h with probability 31%
+		QNN predicts 100 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-490.jpg:
+		QNN predicts 50 Km/h with probability 13%
+
+	 Results for tests/no-sign2/IMG-491.jpg:
+		QNN predicts 50 Km/h with probability 20%
+		QNN predicts 70 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-492.jpg:
+		QNN predicts 120 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-493.jpg:
+		QNN predicts 70 Km/h with probability 2%
+		QNN predicts Stop with probability 1%
+		QNN predicts Turn right ahead with probability 1%
+
+	 Results for tests/no-sign2/IMG-494.jpg:
+		QNN predicts 30 Km/h with probability 12%
+		QNN predicts 50 Km/h with probability 65%
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts Turn left ahead with probability 1%
+
+	 Results for tests/no-sign2/IMG-495.jpg:
+		QNN predicts 30 Km/h with probability 9%
+		QNN predicts 50 Km/h with probability 9%
+		QNN predicts 70 Km/h with probability 38%
+		QNN predicts 100 Km/h with probability 9%
+		QNN predicts 120 Km/h with probability 3%
+
+	 Results for tests/no-sign2/IMG-496.jpg:
+		QNN predicts 30 Km/h with probability 33%
+		QNN predicts 50 Km/h with probability 3%
+		QNN predicts 70 Km/h with probability 26%
+		QNN predicts 100 Km/h with probability 2%
+
+	 Results for tests/no-sign2/IMG-497.jpg:
+		QNN predicts 30 Km/h with probability 9%
+		QNN predicts 60 Km/h with probability 2%
+
+	 Results for tests/no-sign2/IMG-498.jpg:
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 50 Km/h with probability 10%
+		QNN predicts Turn left ahead with probability 3%
+
+	 Results for tests/no-sign2/IMG-499.jpg:
+		QNN predicts 60 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-500.jpg:
+
+	 Results for tests/no-sign2/IMG-501.jpg:
+
+	 Results for tests/no-sign2/IMG-502.jpg:
+
+	 Results for tests/no-sign2/IMG-503.jpg:
+
+	 Results for tests/no-sign2/IMG-504.jpg:
+
+	 Results for tests/no-sign2/IMG-505.jpg:
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/no-sign2/IMG-506.jpg:
+		QNN predicts 80 Km/h with probability 2%
+

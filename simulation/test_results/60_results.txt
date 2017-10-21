@@ -1,0 +1,465 @@
+Results for 60-signs: 
+
+	 Results for tests/speed/60/00023.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00036.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00046.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00086.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00090.ppm:
+		QNN predicts 60 Km/h with probability 98%
+
+	 Results for tests/speed/60/00096.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00115.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00131.ppm:
+		QNN predicts 60 Km/h with probability 95%
+		QNN predicts 80 Km/h with probability 2%
+
+	 Results for tests/speed/60/00155.ppm:
+		QNN predicts 60 Km/h with probability 95%
+		QNN predicts 80 Km/h with probability 4%
+
+	 Results for tests/speed/60/00176.ppm:
+		QNN predicts 60 Km/h with probability 38%
+		QNN predicts 80 Km/h with probability 60%
+
+	 Results for tests/speed/60/00332.ppm:
+		QNN predicts 50 Km/h with probability 7%
+		QNN predicts 60 Km/h with probability 68%
+		QNN predicts 80 Km/h with probability 22%
+
+	 Results for tests/speed/60/00357.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00364.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00372.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00420.ppm:
+		QNN predicts 50 Km/h with probability 13%
+		QNN predicts 60 Km/h with probability 86%
+
+	 Results for tests/speed/60/00439.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00472.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00493.ppm:
+		QNN predicts 50 Km/h with probability 4%
+		QNN predicts 60 Km/h with probability 95%
+
+	 Results for tests/speed/60/00509.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00516.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00526.ppm:
+		QNN predicts 50 Km/h with probability 3%
+		QNN predicts 60 Km/h with probability 28%
+		QNN predicts 80 Km/h with probability 67%
+
+	 Results for tests/speed/60/00576.ppm:
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 9%
+		QNN predicts 80 Km/h with probability 88%
+
+	 Results for tests/speed/60/00595.ppm:
+		QNN predicts 50 Km/h with probability 11%
+		QNN predicts 60 Km/h with probability 55%
+		QNN predicts 80 Km/h with probability 27%
+		QNN predicts 100 Km/h with probability 5%
+
+	 Results for tests/speed/60/00604.ppm:
+		QNN predicts 60 Km/h with probability 49%
+		QNN predicts 80 Km/h with probability 49%
+
+	 Results for tests/speed/60/00700.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00740.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00758.ppm:
+		QNN predicts 30 Km/h with probability 5%
+		QNN predicts 60 Km/h with probability 54%
+		QNN predicts 80 Km/h with probability 39%
+
+	 Results for tests/speed/60/00760.ppm:
+		QNN predicts 60 Km/h with probability 1%
+		QNN predicts 80 Km/h with probability 90%
+		QNN predicts 120 Km/h with probability 1%
+		QNN predicts End of no-overtaking zone for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 5%
+
+	 Results for tests/speed/60/00763.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00768.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00774.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00793.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00822.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00858.ppm:
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 77%
+		QNN predicts 80 Km/h with probability 17%
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts End of no-overtaking zone for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 1%
+
+	 Results for tests/speed/60/00866.ppm:
+		QNN predicts 60 Km/h with probability 61%
+		QNN predicts 80 Km/h with probability 38%
+
+	 Results for tests/speed/60/00878.ppm:
+		QNN predicts 60 Km/h with probability 86%
+		QNN predicts 80 Km/h with probability 13%
+
+	 Results for tests/speed/60/00925.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00928.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/00967.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01007.ppm:
+		QNN predicts 50 Km/h with probability 55%
+		QNN predicts 60 Km/h with probability 42%
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/speed/60/01118.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01142.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01151.ppm:
+		QNN predicts 50 Km/h with probability 8%
+		QNN predicts 60 Km/h with probability 91%
+
+	 Results for tests/speed/60/01204.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01248.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01361.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01377.ppm:
+		QNN predicts 60 Km/h with probability 98%
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/speed/60/01416.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01417.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01461.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01472.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01516.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01535.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01542.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01553.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01573.ppm:
+		QNN predicts 60 Km/h with probability 14%
+		QNN predicts 80 Km/h with probability 78%
+		QNN predicts 100 Km/h with probability 6%
+
+	 Results for tests/speed/60/01578.ppm:
+		QNN predicts 50 Km/h with probability 5%
+		QNN predicts 60 Km/h with probability 88%
+		QNN predicts 80 Km/h with probability 5%
+
+	 Results for tests/speed/60/01607.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01770.ppm:
+		QNN predicts 60 Km/h with probability 89%
+		QNN predicts 80 Km/h with probability 9%
+
+	 Results for tests/speed/60/01771.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01777.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01884.ppm:
+		QNN predicts 20 Km/h with probability 3%
+		QNN predicts 30 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 71%
+		QNN predicts 80 Km/h with probability 20%
+
+	 Results for tests/speed/60/01979.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01998.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/01999.ppm:
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 97%
+
+	 Results for tests/speed/60/02020.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02044.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02053.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02119.ppm:
+		QNN predicts 60 Km/h with probability 98%
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/speed/60/02132.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02158.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02182.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02254.ppm:
+		QNN predicts 30 Km/h with probability 69%
+		QNN predicts 60 Km/h with probability 19%
+		QNN predicts 80 Km/h with probability 10%
+
+	 Results for tests/speed/60/02309.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02318.ppm:
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 98%
+
+	 Results for tests/speed/60/02321.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02397.ppm:
+		QNN predicts 50 Km/h with probability 12%
+		QNN predicts 60 Km/h with probability 83%
+		QNN predicts 80 Km/h with probability 3%
+
+	 Results for tests/speed/60/02496.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02522.ppm:
+		QNN predicts 60 Km/h with probability 74%
+		QNN predicts 80 Km/h with probability 25%
+
+	 Results for tests/speed/60/02538.ppm:
+		QNN predicts 50 Km/h with probability 2%
+		QNN predicts 60 Km/h with probability 3%
+		QNN predicts 80 Km/h with probability 56%
+		QNN predicts End 80 Km/h with probability 1%
+		QNN predicts End of no-overtaking zone for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 35%
+
+	 Results for tests/speed/60/02592.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02645.ppm:
+		QNN predicts 60 Km/h with probability 98%
+
+	 Results for tests/speed/60/02667.ppm:
+		QNN predicts 50 Km/h with probability 3%
+		QNN predicts 60 Km/h with probability 95%
+
+	 Results for tests/speed/60/02737.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02758.ppm:
+		QNN predicts 60 Km/h with probability 88%
+		QNN predicts 80 Km/h with probability 10%
+
+	 Results for tests/speed/60/02785.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02815.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/02965.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03013.ppm:
+		QNN predicts 50 Km/h with probability 5%
+		QNN predicts 60 Km/h with probability 92%
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/speed/60/03104.ppm:
+		QNN predicts 60 Km/h with probability 96%
+		QNN predicts 80 Km/h with probability 2%
+
+	 Results for tests/speed/60/03146.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03156.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03168.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03184.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03192.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03263.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03296.ppm:
+		QNN predicts 60 Km/h with probability 79%
+		QNN predicts 80 Km/h with probability 19%
+
+	 Results for tests/speed/60/03334.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03342.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03346.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03350.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03376.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03400.ppm:
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 98%
+
+	 Results for tests/speed/60/03442.ppm:
+		QNN predicts 60 Km/h with probability 96%
+		QNN predicts 80 Km/h with probability 3%
+
+	 Results for tests/speed/60/03589.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03595.ppm:
+		QNN predicts 60 Km/h with probability 21%
+		QNN predicts 80 Km/h with probability 77%
+
+	 Results for tests/speed/60/03622.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03654.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03655.ppm:
+		QNN predicts 60 Km/h with probability 3%
+		QNN predicts 80 Km/h with probability 93%
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts No overtaking for large trucks with probability 1%
+
+	 Results for tests/speed/60/03671.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/03707.ppm:
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 60 Km/h with probability 96%
+		QNN predicts 80 Km/h with probability 2%
+
+	 Results for tests/speed/60/03732.ppm:
+		QNN predicts 50 Km/h with probability 9%
+		QNN predicts 60 Km/h with probability 81%
+		QNN predicts 80 Km/h with probability 8%
+
+	 Results for tests/speed/60/03791.ppm:
+		QNN predicts 60 Km/h with probability 22%
+		QNN predicts 80 Km/h with probability 18%
+		QNN predicts Bicycles prohibited with probability 49%
+		QNN predicts Risk of snow or ice with probability 6%
+
+	 Results for tests/speed/60/04449.ppm:
+		QNN predicts 50 Km/h with probability 8%
+		QNN predicts 60 Km/h with probability 57%
+		QNN predicts 80 Km/h with probability 33%
+
+	 Results for tests/speed/60/04561.ppm:
+		QNN predicts 50 Km/h with probability 74%
+		QNN predicts 80 Km/h with probability 24%
+
+	 Results for tests/speed/60/04721.ppm:
+		QNN predicts 50 Km/h with probability 9%
+		QNN predicts 60 Km/h with probability 61%
+		QNN predicts 80 Km/h with probability 28%
+
+	 Results for tests/speed/60/04873.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/04894.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/05014.ppm:
+		QNN predicts 60 Km/h with probability 98%
+
+	 Results for tests/speed/60/05015.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/05029.ppm:
+		QNN predicts 60 Km/h with probability 94%
+		QNN predicts 80 Km/h with probability 4%
+
+	 Results for tests/speed/60/05034.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/05231.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/06082.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/06957.ppm:
+		QNN predicts 80 Km/h with probability 98%
+
+	 Results for tests/speed/60/07962.ppm:
+		QNN predicts 60 Km/h with probability 95%
+		QNN predicts 80 Km/h with probability 4%
+
+	 Results for tests/speed/60/07968.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/08914.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
+	 Results for tests/speed/60/08961.ppm:
+		QNN predicts 60 Km/h with probability 99%
+
