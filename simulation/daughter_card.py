@@ -21,10 +21,15 @@ class Daughter_Card:
     non_blocking_signs = ("50 Km/h")
     
     
-    actions = ("drive", "increase speed", "perform action")
+    actions = ("drive", "increase speed", "perform action", "looking for tape")
     effort = {"drive": 0.5, "increase speed": 1, "perform action": 3}
     state = actions[0]
         
+
+    # New way of doing things, experimental
+    inputs = {'d': "drive", 'l': "look for tape", 'p': "perform action"}
+
+    
 
     def send(self, result):
         #f = open('probs.txt', 'a')
@@ -55,3 +60,6 @@ class Daughter_Card:
         print "\tPCB: performing action " + self.state
         sleep(self.effort[self.state])
         state = self.actions[0]
+
+    def get_state(self):
+        return state
