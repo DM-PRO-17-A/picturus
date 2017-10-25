@@ -28,7 +28,9 @@ class Daughter_Card:
 
     # New way of doing things, experimental
     inputs = {'d': "drive", 'l': "look for tape", 'p': "perform action"}
-
+    # Some notes I guess:
+    #     Should look into interrupts
+    #     When PCB starts execution, allow Cortex to interrupt and ask for state
     
 
     def send(self, result):
