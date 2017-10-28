@@ -32,6 +32,7 @@ def get_most_probable_sign(res):
 
 
 path = "pics/"
+# path = "pics/demo/"
 pics = []
 for (dirpath, dirnames, filenames) in walk(path):
     for filename in filenames:
@@ -43,13 +44,17 @@ pics = open_images(pics)
 fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
 fsm = fsm_states[0]
 pcb = Daughter_Card()
+signals = {'Turn right ahead': 'r', 'Turn left ahead': 'l', 'Stop': 's', '50 Km/h': '5'}
 
 
+count = 0
 while True:
     print "Drive"
     sleep(3)
 
-    print "Get random picture"
+###################
+# This should loop through all pictures for each frame, calculating a final result array to use
+    print "Get next picture"
     fsm = fsm_states[1]
     pic = pics[randrange(0, len(pics))]
     print "The chosen picture is " + pic[0]
@@ -57,9 +62,14 @@ while True:
     print "Send to QNN"
     res = gtsrb_predict(pic[1])
 
+    count += 1
+    if count == len(pics): count = 0
+###################
+
+# Send a single result per frame
     print "Send result array to daughter card"
     sign, prob = get_most_probable_sign(res)
-    fsm = fsm_states[pcb.send(sign, prob)]
+    fsm = fsm_states[pcb.send(signals[sign], prob)]
     
     if fsm != "driving":
         print "Wait for daughter card to perform action"

@@ -2,57 +2,37 @@ from time import sleep
 
 
 class Daughter_Card:
-    gtsrb_classes = ['20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '70 Km/h', '80 Km/h',
-                     'End 80 Km/h', '100 Km/h', '120 Km/h', 'No overtaking',
-                     'No overtaking for large trucks', 'Priority crossroad', 'Priority road',
-                     'Give way', 'Stop', 'No vehicles',
-                     'Prohibited for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses',
-                     'No entry for vehicular traffic', 'Danger Ahead', 'Bend to left',
-                     'Bend to right', 'Double bend (first to left)', 'Uneven road',
-                     'Road slippery when wet or dirty', 'Road narrows (right)', 'Road works',
-                     'Traffic signals', 'Pedestrians in road ahead', 'Children crossing ahead',
-                     'Bicycles prohibited', 'Risk of snow or ice', 'Wild animals',
-                     'End of all speed and overtaking restrictions', 'Turn right ahead',
-                     'Turn left ahead', 'Ahead only', 'Ahead or right only',
-                     'Ahead or left only', 'Pass by on right', 'Pass by on left', 'Roundabout',
-                     'End of no-overtaking zone',
-                     'End of no-overtaking zone for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses']
     
-    blocking_signs = ("Turn left ahead", "Turn right ahead", "Stop")
-    non_blocking_signs = ("50 Km/h")
+    # blocking_signs = ("Turn right ahead", "Turn left ahead", "Stop")
+    # non_blocking_signs = ("50 Km/h")
+    blocking_signs = ('r', 'l', 's')
+    non_blocking_signs = ('5')
     
-
-    # TODO: change actions to be clearer
+    
     actions = ("drive", "increase speed", "perform action", "looking for tape")
     effort = {"drive": 0.5, "increase speed": 1, "perform action": 3}
     state = actions[0]
         
 
-    # New way of doing things, experimental
-    inputs = {'d': "drive", 'l': "look for tape", 'p': "perform action"}
-    # Some notes I guess:
-    #     Should look into interrupts
-    #     When PCB starts execution, allow Cortex to interrupt and ask for state
+    inputs = {'d': "drive", 'l': "look for tape", 'r': "turn right", 'l': "turn left", 's': "stop", '5': "setting speed to 50 km/h"}
 
-
-    def send(self, sign, prob):
-        #f = open('probs.txt', 'a')
-        print "\tPCB: the QNN predicts the sign is a " + sign + " with probability " + str(prob*100)
-        #f.write('\n')
-        #f.close()
-        if sign in self.blocking_signs:
-            self.state = self.actions[2]
+    def send(self, signal, prob):
+        print "\tPCB: the QNN predicts the sign is a " + self.inputs[signal] + " with probability " + str(prob*100)
+        
+        if signal in self.blocking_signs:
+            self.state = self.inputs[signal]
             return 3
-        elif sign in self.non_blocking_signs:
-            self.state = self.actions[1]
+        elif signal in self.non_blocking_signs:
+            self.state = self.inputs[signal]
             return 2
         else:
             print "\tPCB: this is not an expected sign"
-            self.state = self.actions[0]
+            self.state = self.inputs[signal]
             return 0
-                
+
+        
     def receive(self):
+        # TODO: fix effort
         print "\tPCB: performing action " + self.state
         sleep(self.effort[self.state])
-        self.state = self.actions[0]
-
+        self.state = self.inputs['d']

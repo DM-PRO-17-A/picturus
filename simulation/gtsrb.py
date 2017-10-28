@@ -1,9 +1,6 @@
 import numpy as np
 import pickle
 from QNN.layers import *
-# TODO: find a way to print pretty colors in predict
-# Maybe install termcolor?
-# from termcolor import colored
 
 
 qnn = pickle.load(open("gtsrb-w1a1.pickle", "rb"))
