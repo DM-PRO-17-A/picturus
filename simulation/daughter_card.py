@@ -10,11 +10,11 @@ class Daughter_Card:
     
     
     actions = ("drive", "increase speed", "perform action", "looking for tape")
-    effort = {"drive": 0.5, "increase speed": 1, "perform action": 3}
+    effort = {"drive": 0.1, "increase speed": 1, "turn right": 3, "turn left": 3, "set speed to 50 km/h": 0.5, "set speed to 70 km/h": 0.5, "set speed to 100 km/h": 0.5, "stop": 0.2}
     state = actions[0]
         
 
-    inputs = {'d': "drive", 'l': "look for tape", 'r': "turn right", 'l': "turn left", 's': "stop", '5': "setting speed to 50 km/h"}
+    inputs = {'d': "drive", 'l': "look for tape", 'r': "turn right", 'l': "turn left", 's': "stop", '5': "set speed to 50 km/h", '7': "set speed to 70 km/h", '1': "set speed to 100 km/h"}
 
     def send(self, signal, prob):
         print "\tPCB: the QNN predicts the sign is a " + self.inputs[signal] + " with probability " + str(prob*100)
@@ -32,7 +32,6 @@ class Daughter_Card:
 
         
     def receive(self):
-        # TODO: fix effort
         print "\tPCB: performing action " + self.state
         sleep(self.effort[self.state])
         self.state = self.inputs['d']

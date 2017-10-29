@@ -45,9 +45,15 @@ fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "rece
 fsm = fsm_states[0]
 pcb = Daughter_Card()
 signals = {'Turn right ahead': 'r', 'Turn left ahead': 'l', 'Stop': 's', '50 Km/h': '5'}
+weights = [0] * 43
+weights[2] = 1 # 50 km/h
+weights[4] = 1 # 70 km/h
+weights[7] = 1 # 100 km/h
+weights[14] = 1 #stop
+weights[33] = 1 # turn right
+weights[34] = 1 # turn left
 
 
-count = 0
 while True:
     print "Drive"
     sleep(3)
@@ -56,22 +62,28 @@ while True:
 # This should loop through all pictures for each frame, calculating a final result array to use
     print "Get next picture"
     fsm = fsm_states[1]
+    # for pic in pics:
     pic = pics[randrange(0, len(pics))]
     print "The chosen picture is " + pic[0]
 
     print "Send to QNN"
     res = gtsrb_predict(pic[1])
 
-    count += 1
-    if count == len(pics): count = 0
+    average = [0] * 43
+    for i in range(len(res)):
+        average[i] = res[i]*weights[i]
+    
 ###################
 
-# Send a single result per frame
+    # Send a single result per frame
     print "Send result array to daughter card"
-    sign, prob = get_most_probable_sign(res)
+    sign, prob = get_most_probable_sign(average)
     fsm = fsm_states[pcb.send(signals[sign], prob)]
     
     if fsm != "driving":
         print "Wait for daughter card to perform action"
         pcb.receive()
         print "Action performed"
+
+    # Iterate cycle one step, i.e. take another picture and process it, replacing the old ones
+    # !!!Somehow call the script!!!
