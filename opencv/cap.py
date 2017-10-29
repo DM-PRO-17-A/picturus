@@ -56,12 +56,16 @@ time_per_frame = timeit.default_timer()
 
 
 # Normally this would just be while(True), but easier to time a set amount.
-while(frame_count < 50):
+while(frame_count < 500):
     # Capture frame-by-frame
 
     time_per_read = timeit.default_timer()
     ret, frame = cap.read()
     time_per_read = timeit.default_timer() - time_per_read
+
+    time_per_cvt = timeit.default_timer()
+    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB);
+    time_per_cvt = timeit.default_timer() - time_per_cvt
 
     # Prod: Crop
     time_per_crop = timeit.default_timer()
@@ -79,6 +83,10 @@ while(frame_count < 50):
     time_per_wait = timeit.default_timer() - time_per_wait
 
     print('Frame {}'.format(frame_count))
+
+    time_per_flat = timeit.default_timer()
+    print(frame.flatten())
+    time_per_flat = timeit.default_timer() - time_per_flat
 
     pyr_count = 0
     win_count = 0
@@ -126,10 +134,12 @@ cap.release()
 cv2.destroyAllWindows()
 
 print('')
-print('max: {}'.format(50 / fps))
+print('max: {}'.format(500 / fps))
 print('time: {}'.format(time_per_frame))
 print('')
 print('read: {}'.format(time_per_read))
+print('cvt: {}'.format(time_per_cvt))
+print('flat: {}'.format(time_per_flat))
 print('crop: {}'.format(time_per_crop))
 print('show: {}'.format(time_per_show))
 print('wait: {}'.format(time_per_wait))
