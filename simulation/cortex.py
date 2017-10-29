@@ -23,7 +23,7 @@ def get_most_probable_sign(res):
     temp_max = -1
     index = -1
     for i in range(len(res)):
-        if int(res[i]*100) != 0:
+        if res[i] > 0.01:
             if res[i] > temp_max:
                 temp_max = res[i]
                 index = i
@@ -31,8 +31,8 @@ def get_most_probable_sign(res):
     return sign, temp_max
 
 
-path = "pics/"
-# path = "pics/demo/"
+# path = "pics/"
+path = "pics/demo/"
 pics = []
 for (dirpath, dirnames, filenames) in walk(path):
     for filename in filenames:
@@ -44,7 +44,7 @@ pics = open_images(pics)
 fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
 fsm = fsm_states[0]
 pcb = Daughter_Card()
-signals = {'Turn right ahead': 'r', 'Turn left ahead': 'l', 'Stop': 's', '50 Km/h': '5'}
+signals = {'Turn right ahead': 'r', 'Turn left ahead': 'l', 'Stop': 's', '50 Km/h': '5', '70 Km/h': '7', '100 Km/h': '1'}
 weights = [0] * 43
 weights[2] = 1 # 50 km/h
 weights[4] = 1 # 70 km/h
@@ -62,16 +62,16 @@ while True:
 # This should loop through all pictures for each frame, calculating a final result array to use
     print "Get next picture"
     fsm = fsm_states[1]
-    # for pic in pics:
-    pic = pics[randrange(0, len(pics))]
-    print "The chosen picture is " + pic[0]
+    print "Analyse frame with QNN"
+    for pic in pics:
+    # pic = pics[randrange(0, len(pics))]
+        # print "The chosen picture is " + pic[0]
 
-    print "Send to QNN"
-    res = gtsrb_predict(pic[1])
+        res = gtsrb_predict(pic[1])
 
-    average = [0] * 43
-    for i in range(len(res)):
-        average[i] = res[i]*weights[i]
+        average = [0] * 43
+        for i in range(len(res)):
+            average[i] += res[i]*weights[i]
     
 ###################
 
@@ -87,3 +87,4 @@ while True:
 
     # Iterate cycle one step, i.e. take another picture and process it, replacing the old ones
     # !!!Somehow call the script!!!
+    break

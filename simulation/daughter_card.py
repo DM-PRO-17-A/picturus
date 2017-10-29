@@ -6,7 +6,7 @@ class Daughter_Card:
     # blocking_signs = ("Turn right ahead", "Turn left ahead", "Stop")
     # non_blocking_signs = ("50 Km/h")
     blocking_signs = ('r', 'l', 's')
-    non_blocking_signs = ('5')
+    non_blocking_signs = ('5', '7', '1')
     
     
     actions = ("drive", "increase speed", "perform action", "looking for tape")
