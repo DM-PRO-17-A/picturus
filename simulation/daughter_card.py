@@ -14,9 +14,14 @@ class Daughter_Card:
     state = actions[0]
         
 
-    inputs = {'d': "drive", 'l': "look for tape", 'r': "turn right", 'l': "turn left", 's': "stop", '5': "set speed to 50 km/h", '7': "set speed to 70 km/h", '1': "set speed to 100 km/h"}
+    inputs = {'f': "drive", 'l': "look for tape", 'r': "turn right", 'l': "turn left", 's': "stop", '5': "set speed to 50 km/h", '7': "set speed to 70 km/h", '1': "set speed to 100 km/h"}
 
     def send(self, signal, prob):
+        if prob < 0:
+            self.state = self.inputs[signal]
+            print "\tPCB: the QNN predicts that this is most likely not a relevant sign"
+            return 0
+            
         print "\tPCB: the QNN predicts the sign is a " + self.inputs[signal] + " with probability " + str(prob*100)
         
         if signal in self.blocking_signs:
@@ -34,4 +39,4 @@ class Daughter_Card:
     def receive(self):
         print "\tPCB: performing action " + self.state
         sleep(self.effort[self.state])
-        self.state = self.inputs['d']
+        self.state = self.inputs['f']
