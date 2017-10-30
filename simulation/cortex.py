@@ -50,6 +50,7 @@ weights[2] = 1 # 50 km/h
 weights[4] = 1 # 70 km/h
 weights[7] = 1 # 100 km/h
 weights[14] = 1 #stop
+weights[17] = 1 # no entry
 weights[33] = 1 # turn right
 weights[34] = 1 # turn left
 
@@ -63,15 +64,16 @@ while True:
     print "Get next picture"
     fsm = fsm_states[1]
     print "Analyse frame with QNN"
+    average = [0] * 43
     for pic in pics:
     # pic = pics[randrange(0, len(pics))]
         # print "The chosen picture is " + pic[0]
 
         res = gtsrb_predict(pic[1])
 
-        average = [0] * 43
         for i in range(len(res)):
-            average[i] += res[i]*weights[i]
+            if res[i] > 0.9:
+                average[i] += res[i]*weights[i]
     
 ###################
 
