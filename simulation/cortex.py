@@ -8,7 +8,7 @@ from time import sleep
 from random import randrange
 # For finding all files in a directory
 from os import walk
-
+# For normalising result array
 import numpy as np
 
 
@@ -31,7 +31,6 @@ def get_most_probable_sign(res):
 def softmax(v):
     e_x = np.exp(v - np.max(v))
     return e_x / e_x.sum()
-
 def relulayer(v):
     return np.asarray(map(lambda x: x if x>0 else 0, v))
     
@@ -48,8 +47,8 @@ pics = open_images(pics)
 fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
 fsm = fsm_states[0]
 pcb = Daughter_Card()
-signals = {'Turn right ahead': 'r', 'Turn left ahead': 'l', 'Stop': 's', 'No entry for vehicular traffic': 'u', '50 Km/h': '5', '70 Km/h': '7', '100 Km/h': '1'}
-weights = [0] * 43
+signals = {'Turn right ahead': 'r', 'Turn left ahead': 'l', 'Stop': 's', 'No entry for vehicular traffic': 'u', '50 Km/h': '5', '70 Km/h': '7', '100 Km/h': '1', 'Drive': 'f'}
+weights = [0.5] * 43
 weights[2] = 1 # 50 km/h
 weights[4] = 1 # 70 km/h
 weights[7] = 1 # 100 km/h
@@ -62,31 +61,31 @@ weights[34] = 1 # turn left
 print "Drive"
 sleep(3)
 
+# Keep a running average
+average = [0] * 43
 while True:
     print "Get next picture"
     fsm = fsm_states[1]
 
     print "Analyse frame with QNN"
-    average = [0] * 43
     for pic in pics:
         res = gtsrb_predict(pic[1])
 
         for i in range(len(res)):
             if res[i] > 0.9:
-                average[i] *= 0.8
                 average[i] += res[i]*weights[i]
 
     average = softmax(average)
     average = relulayer(average)
-    
+
     # Send a single result per frame
     print "Send result array to daughter card"
     sign, prob = get_most_probable_sign(average)
     print prob
-    if prob > 0.5:
-        fsm = fsm_states[pcb.send(signals[sign], prob)]
+    if prob > 0.75:
+        fsm = fsm_states[pcb.send(signals.get(sign, 'f'), prob)]
     else:
-        fsm = fsm_states[pcb.send('f', -1)]
+        fsm = fsm_states[pcb.send(signals['Drive'], -1)]
                 
     if fsm != "driving":
         print "Wait for daughter card to perform action"
