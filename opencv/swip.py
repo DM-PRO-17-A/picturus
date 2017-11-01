@@ -95,7 +95,7 @@ while(frame_count < 500):
     for resized_frame in pyramid(frame, scale=1.5):
         print('Frame {}, level {}'.format(frame_count, pyr_count))
         # loop over the sliding window for each layer of the pyramid
-        for (x, y, window) in sliding_window(resized_frame, step_size=16, window_size=(winW, winH)):
+        for (x, y, window) in sliding_window(resized_frame, step_size=8, window_size=(winW, winH)):
 
             print('Frame {}, level {}, window {}'.format(frame_count, pyr_count, win_count))
 

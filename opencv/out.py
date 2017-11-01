@@ -16,3 +16,7 @@ oned = img.reshape(-1)
 print('')
 print('1D list')
 print(oned)
+print(oned.tolist())
+
+f = open('scrt.txt', 'w')
+f.write(', '.join(str(v) for v in oned.tolist()))
