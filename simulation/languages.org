@@ -1,0 +1,63 @@
+* Notes on different languages/versions of Python
+I've considered a few different languages and compilers to use for the final implementation. 
+I'll try to list a few pros and cons
+
+** Cython
+Python that gets compiled to C code
+*** Pros
+    Quite powerful
+    Should be easy to write
+*** Cons
+    Bit of a chore to set up
+    Hard to include various libraries (like numpy)
+
+** numba
+Adds a Just In Time (JIT) compiler for portions of your code
+*** Pros
+    Easy to write, basically just adding a line here and there
+    Can be used with most (all?) libraries
+    Can lead to very significant speedups
+*** Cons
+    Also a chore to set up, quite large downloads
+    Not sure how reliable the speedup is, i.e. how easy 
+        it is to consistently get a good increase
+    Can be hard to work out how to use properly
+
+** Pypy
+Complete JIT for Python
+*** Pros
+    Easy to set up
+    Easy to use (just write normal Python)
+    Can use most libraries
+    Good speedups
+    Very reliable speedups
+*** Cons
+    Some work to set up libraries
+    Not as good speedups as with numba (haven't compared to 
+    Cython)
+
+** C/C++
+Low-level, compiled languages by default
+*** Pros
+    Very powerful and high performance
+    Very well documented
+    A ridiculous amount of libraries available
+*** Cons
+    Somewhat hard to use (well)
+    Lots to learn for people who aren't used to them
+    Many things aren't as straightforward as in Python
+
+** Some links
+Various links with info on the different things
+*** Cython
+    http://cython.org
+    https://alternativeto.net/software/cython/
+*** Numba
+    http://numba.pydata.org
+    https://github.com/numba/numba
+    https://jakevdp.github.io/blog/2012/08/24/numba-vs-cython/
+*** Pypy
+    http://pypy.org
+    https://pip.pypa.io/en/latest/installing/
+    https://pybenchmarks.org/u64q/benchmark.php?test=all&lang=numba&lang2=pypy&data=u64q
+    https://stackoverflow.com/questions/4864674/how-to-use-pil-with-pypy

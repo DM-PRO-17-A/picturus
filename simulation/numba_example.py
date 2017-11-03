@@ -1,5 +1,5 @@
 import numpy as np
-from numba import double
+# from numba import double
 from numba.decorators import jit
 from time import time
 
@@ -17,6 +17,7 @@ def pairwise_numba(X, D):
             D[i, j] = np.sqrt(d)
 X = np.random.random((1000, 3))
 D = np.empty((1000, 1000))
-# start = time()
-pairwise_numba(X, D)
-# print time() - start
+for i in range(100):
+	start = time()
+        pairwise_numba(X, D)
+        print time() - start
