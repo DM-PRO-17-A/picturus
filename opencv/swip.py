@@ -7,7 +7,7 @@ import ctypes
 
 bridge = ctypes.cdll.LoadLibrary('./test_queue.so')
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 # Prod: Resolution and fps
 w = 432

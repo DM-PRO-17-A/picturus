@@ -18,5 +18,5 @@ print('1D list')
 print(oned)
 print(oned.tolist())
 
-f = open('scrt.txt', 'w')
+f = open('vector.txt', 'w')
 f.write(', '.join(str(v) for v in oned.tolist()))
