@@ -25,6 +25,9 @@ Adds a Just In Time (JIT) compiler for portions of your code
 
 ** Pypy
 Complete JIT for Python
+
+I think this looks like the best option. It's easy to use, has very decent performance, and can somewhat easily use other libraries
+
 *** Pros
     Easy to set up
     Easy to use (just write normal Python)
@@ -48,16 +51,44 @@ Low-level, compiled languages by default
     Many things aren't as straightforward as in Python
 
 ** Some links
-Various links with info on the different things
+   Various links with info on the different things
 *** Cython
     http://cython.org
+
     https://alternativeto.net/software/cython/
 *** Numba
     http://numba.pydata.org
+
     https://github.com/numba/numba
+
     https://jakevdp.github.io/blog/2012/08/24/numba-vs-cython/
 *** Pypy
     http://pypy.org
+
     https://pip.pypa.io/en/latest/installing/
+
     https://pybenchmarks.org/u64q/benchmark.php?test=all&lang=numba&lang2=pypy&data=u64q
+
     https://stackoverflow.com/questions/4864674/how-to-use-pil-with-pypy
+*** Interfacing
+    We need to interface between the main script and the other components
+**** Camera
+    OpenCV script implemented in Python? Very easy to do if so. If it's done in C/C++, look at next part
+**** FPGA and QNN
+    The FPGA receives images by pushing images to a queue. This is done through a C++ program(?)
+    
+    Calling C++ from Python is doable, but requires libraries, for example:
+
+    https://docs.python.org/2/library/ctypes.html
+
+    http://www.boost.org/doc/libs/1_49_0/libs/python/doc/tutorial/doc/html/index.html
+
+    http://swig.org
+
+    https://stackoverflow.com/questions/145270/calling-c-c-from-python
+
+    At a glance, I think ctypes looks the most promising, but some seem to think that SWIG is the best for small stuff
+**** Daughter card
+    Communication over UART. This has been before, even with the Pynq-Z1. Should be quite easy(TM)
+
+    PySerial (import serial)

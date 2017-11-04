@@ -64,11 +64,16 @@ sleep(3)
 # Keep a running average
 average = [0] * 43
 while True:
+    # Iterate cycle one step, i.e. take another picture and process it, replacing the old ones
+    # Call camera script
+    # Get array of the images to use next
     print "Get next picture"
     fsm = fsm_states[1]
 
     print "Analyse frame with QNN"
     for pic in pics:
+        # Replace with call to actual QNN on FPGA
+        # Will be done in a C++ script?
         res = gtsrb_predict(pic[1])
 
         for i in range(len(res)):
@@ -82,6 +87,7 @@ while True:
     print "Send result array to daughter card"
     sign, prob = get_most_probable_sign(average)
     print prob
+    # Send UART signal to PCB
     if prob > 0.75:
         fsm = fsm_states[pcb.send(signals.get(sign, 'f'), prob)]
     else:
@@ -91,7 +97,4 @@ while True:
         print "Wait for daughter card to perform action"
         pcb.receive()
         print "Action performed"
-
-    # Iterate cycle one step, i.e. take another picture and process it, replacing the old ones
-    # !!!Somehow call the script!!!
     break
