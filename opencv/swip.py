@@ -1,4 +1,4 @@
-# Credit to https://www.pyimagesearch.com/2015/03/23/sliding-windows-for-object-detection-with-python-and-opencv/
+# For sliding window image pyramid, credit to https://www.pyimagesearch.com/2015/03/23/sliding-windows-for-object-detection-with-python-and-opencv/
 
 import cv2
 import imutils
@@ -7,9 +7,9 @@ import ctypes
 
 bridge = ctypes.cdll.LoadLibrary('./misc/test_queue.so')
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
-# Prod: Resolution and fps
+# Resolution, fps, crop.
 w = 432
 h = 240
 fps = 5
@@ -24,8 +24,13 @@ cap.set(cv2.cv.CV_CAP_PROP_FPS, fps)
 # Window width and height
 (winW, winH) = (32, 32)
 
+# How will the window be handled?
+window_send = False
+window_save = True
+window_draw = False
 
-# it's weird man
+
+# Helper function for sliding window over a given frame
 def sliding_window(image, step_size, window_size):
     # slide a window across the image
     for y in range(0, image.shape[0], step_size):
@@ -34,7 +39,7 @@ def sliding_window(image, step_size, window_size):
             yield (x, y, image[y:y + window_size[1], x:x + window_size[0]])
 
 
-# uhmmm
+# Wrapping helper function for image pyramid
 def pyramid(image, scale=1.5, min_size=(32, 32)):
     # yield the original image
     yield image
@@ -57,7 +62,6 @@ frame_count = 1
 
 time_per_frame = timeit.default_timer()
 
-
 # Normally this would just be while(True), but easier to time a set amount.
 frame_cap = 100
 while(frame_count < frame_cap):
@@ -68,7 +72,8 @@ while(frame_count < frame_cap):
     time_per_read = timeit.default_timer() - time_per_read
 
     time_per_cvt = timeit.default_timer()
-    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB);
+    if not window_save:
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB);
     time_per_cvt = timeit.default_timer() - time_per_cvt
 
     # Prod: Crop
@@ -107,15 +112,26 @@ while(frame_count < frame_cap):
 
             # Handle the frame
             time_per_handle = timeit.default_timer()
-            window_reshaped = window.reshape(-1)
-            window_output = (ctypes.c_int * len(window_reshaped))(*window_reshaped) # This line is EXTREMELY slow
-            bridge.iterate_input(window_output)
-            time_per_handle = timeit.default_timer() - time_per_handle
 
-            # Draw the window
-            # cv2.rectangle(resized_frame, (x, y), (x + winW, y + winH), (0, 255, 0), 2)
-            # cv2.imshow("Preview", resized_frame)
-            # cv2.waitKey(1)
+            # If we want to send the window as an array to our given C++ function.
+            if window_send:
+                window_reshaped = window.reshape(-1)
+                window_output = (ctypes.c_int * len(window_reshaped))(*window_reshaped) # This line is EXTREMELY slow
+                bridge.iterate_input(window_output)
+
+            # If generating .jpg testdata, save every window as a file.
+            # Surprisingly gentle on performance.
+            if window_save:
+                cv2.imwrite('./img/test/f{}_p{}_w{}.jpg'.format(frame_count, pyr_count, win_count), window)
+
+            # Sometimes it can be helpful to see the windows visualized.
+            # Not a performance hit, but wildly distracting and glitchy
+            if window_draw:
+                cv2.rectangle(resized_frame, (x, y), (x + winW, y + winH), (0, 255, 0), 2)
+                cv2.imshow("Preview", resized_frame)
+                cv2.waitKey(1)
+
+            time_per_handle = timeit.default_timer() - time_per_handle
 
             win_count += 1
         pyr_count += 1
