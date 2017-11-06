@@ -79,6 +79,8 @@ Low-level, compiled languages by default
 *** Pypy
     http://pypy.org
 
+    http://packages.pypy.org/
+
     https://pip.pypa.io/en/latest/installing/
 
     https://pybenchmarks.org/u64q/benchmark.php?test=all&lang=numba&lang2=pypy&data=u64q

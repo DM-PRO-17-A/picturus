@@ -73,15 +73,15 @@ def preprocessing(image, colors, radii, scale):
             return np.zeros((2,2))
     else: return np.zeros((2,2))
 
-in_path = "pics/demo/in/"
-out_path = "pics/demo/out/"
+in_path = "pics/in/"
+out_path = "pics/out/"
 
 red = np.array([123,34,30])
 #blue = np.array([25,50,110])
 blue = np.array([21,42,95])
 radii = [30, 45]
 colors = [red, blue]
-#S = time()
+S = time()
 for (dirpath, dirnames, filenames) in walk(in_path):
     for filename in filenames: 
         if '.jpg' in filename:
@@ -92,5 +92,4 @@ for (dirpath, dirnames, filenames) in walk(in_path):
                 continue
             #print time()-s
             misc.imsave(out_path+filename, p)
-#print "Total time: " + str(time()-S)
-
+print "Total time: " + str(time()-S)

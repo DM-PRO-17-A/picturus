@@ -28,14 +28,11 @@ def get_most_probable_sign(res):
     return sign, temp_max
 
 
-# The last two layers of the QNN
-# They're used to make sense of the collective output of each frame
-# Will also be needed when using the actual QNN, as it won't include these layers
+# The last layer of the QNN
+# Used to make sense of the collective output of each frame
 def softmax(v):
     e_x = np.exp(v - np.max(v))
     return e_x / e_x.sum()
-def relulayer(v):
-    return np.asarray(map(lambda x: x if x>0 else 0, v))
 
 
 # FSM is most likely not needed here
@@ -89,14 +86,13 @@ def main():
             # Replace with call to actual QNN on FPGA
             # Will be done in a C++ script?
             res = gtsrb_predict(pic[1])
-            
+            # print gtsrb_classes[res.argmax(axis=0)]
             for i in range(len(res)):
                 if res[i] > 0.9:
                     average[i] += res[i]*weights[i]
         ########################################
         # Get output values from QNN and process them
         average = softmax(average)
-        average = relulayer(average)
                     
         # Send a single result per frame
         print "Send result array to daughter card"
@@ -113,7 +109,7 @@ def main():
         pcb.receive()
         print "Action performed"
         
-        # break
+        break
 
 
 if  __name__ =='__main__':
