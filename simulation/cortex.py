@@ -75,9 +75,11 @@ def main():
         print "Drive"
         # sleep(3)
 
-        # Iterate cycle one step, i.e. take another picture and process it, replacing the old ones
+        # Iterate cycle one step, i.e. take another picture and process it
         # Call camera script
         # Get array of the images to use next
+        ########################################
+        # This whole part will be replaced with a single call to a script
         print "Get next picture"
         # pics = ???
         # fsm = fsm_states[1]
@@ -91,7 +93,8 @@ def main():
             for i in range(len(res)):
                 if res[i] > 0.9:
                     average[i] += res[i]*weights[i]
-                    
+        ########################################
+        # Get output values from QNN and process them
         average = softmax(average)
         average = relulayer(average)
                     
