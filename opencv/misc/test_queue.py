@@ -1,5 +1,5 @@
 from ctypes import *
-trip = cdll.LoadLibrary('./misc/test_queue.so')
+trip = cdll.LoadLibrary('./test_queue.so')
 
 py_list = [1, 2, 3, 4, 5]
 c_array = (c_int * len(py_list))(*py_list)
