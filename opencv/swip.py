@@ -3,6 +3,9 @@
 import cv2
 import imutils
 import timeit
+import ctypes
+
+bridge = ctypes.cdll.LoadLibrary('./test_queue.so')
 
 cap = cv2.VideoCapture(1)
 
@@ -56,7 +59,8 @@ time_per_frame = timeit.default_timer()
 
 
 # Normally this would just be while(True), but easier to time a set amount.
-while(frame_count < 500):
+frame_cap = 100
+while(frame_count < frame_cap):
     # Capture frame-by-frame
 
     time_per_read = timeit.default_timer()
@@ -84,10 +88,6 @@ while(frame_count < 500):
 
     print('Frame {}'.format(frame_count))
 
-    time_per_flat = timeit.default_timer()
-    print(frame.flatten())
-    time_per_flat = timeit.default_timer() - time_per_flat
-
     pyr_count = 0
     win_count = 0
     ign_count = 0
@@ -95,7 +95,7 @@ while(frame_count < 500):
     for resized_frame in pyramid(frame, scale=1.5):
         print('Frame {}, level {}'.format(frame_count, pyr_count))
         # loop over the sliding window for each layer of the pyramid
-        for (x, y, window) in sliding_window(resized_frame, step_size=8, window_size=(winW, winH)):
+        for (x, y, window) in sliding_window(resized_frame, step_size=16, window_size=(winW, winH)):
 
             print('Frame {}, level {}, window {}'.format(frame_count, pyr_count, win_count))
 
@@ -105,25 +105,19 @@ while(frame_count < 500):
                 ign_count += 1
                 continue
 
+            # Handle the frame
+            time_per_handle = timeit.default_timer()
+            window_reshaped = window.reshape(-1)
+            window_output = (ctypes.c_int * len(window_reshaped))(*window_reshaped) # This line is EXTREMELY slow
+            bridge.iterate_input(window_output)
+            time_per_handle = timeit.default_timer() - time_per_handle
+
+            # Draw the window
+            # cv2.rectangle(resized_frame, (x, y), (x + winW, y + winH), (0, 255, 0), 2)
+            # cv2.imshow("Preview", resized_frame)
+            # cv2.waitKey(1)
+
             win_count += 1
-
-
-            #clone = window.copy()
-            #path = '/home/embrik/Datamaskinprosjekt/picturus/pyramid/test_images'
-            #cv2.imwrite('./test_images/' + unique_filename + 'test' + str(counter) + '.jpg', clone)
-
-
-
-            # THIS IS WHERE YOU WOULD PROCESS YOUR WINDOW, SUCH AS APPLYING A
-            # MACHINE LEARNING CLASSIFIER TO CLASSIFY THE CONTENTS OF THE
-            # WINDOW
-
-            # since we do not have a classifier, we'll just draw the window
-            # clone = resized_frame.copy()
-            #cv2.rectangle(resized_frame, (x, y), (x + winW, y + winH), (0, 255, 0), 2)
-            #cv2.imshow("uhm", resized_frame)
-            #cv2.waitKey(1)
-
         pyr_count += 1
     frame_count += 1
 time_per_frame = (timeit.default_timer() - time_per_frame)
@@ -134,15 +128,15 @@ cap.release()
 cv2.destroyAllWindows()
 
 print('')
-print('max: {}'.format(500 / fps))
+print('max: {}'.format(frame_cap / fps))
 print('time: {}'.format(time_per_frame))
 print('')
 print('read: {}'.format(time_per_read))
 print('cvt: {}'.format(time_per_cvt))
-print('flat: {}'.format(time_per_flat))
 print('crop: {}'.format(time_per_crop))
 print('show: {}'.format(time_per_show))
 print('wait: {}'.format(time_per_wait))
+print('handle: {}'.format(time_per_handle))
 print('')
 print('Max time per frame: {}'.format(1.0 / fps))
 print('Time per frame: {}'.format(time_per_frame / frame_count))
