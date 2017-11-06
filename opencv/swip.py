@@ -4,10 +4,26 @@ import cv2
 import imutils
 import timeit
 import ctypes
+import time
 
+
+# Load bridge to C++
 bridge = ctypes.cdll.LoadLibrary('./misc/test_queue.so')
 
+
+# Initialize video capture with camera at index
 cap = cv2.VideoCapture(1)
+
+
+# Counters for timers and filenames
+frame_count = 0
+
+
+# How will the window be handled?
+window_send = False
+window_save = True
+window_draw = False
+
 
 # Resolution, fps, crop.
 w = 432
@@ -17,17 +33,35 @@ fps = 5
 ch = int(h * 0.75)
 cw = int(w * 0.5)
 
+
+# Save initial image from framing and reference
+if window_save:
+    cap.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, 1280)
+    cap.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, 960)
+    adjust_count = 0
+    while adjust_count < 10:
+        ret, img = cap.read()
+        adjust_count += 1
+    cv2.imwrite('./img/test/0_full.jpg'.format(frame_count), img)
+
+
+# Set resolution and fps
 cap.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, w)
 cap.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, h)
 cap.set(cv2.cv.CV_CAP_PROP_FPS, fps)
 
-# Window width and height
-(winW, winH) = (32, 32)
 
-# How will the window be handled?
-window_send = False
-window_save = True
-window_draw = False
+# Save image post-resolution set
+if window_save:
+    adjust_count = 0
+    while adjust_count < 10:
+        ret, img = cap.read()
+        adjust_count += 1
+    cv2.imwrite('./img/test/1_lowres.jpg'.format(frame_count), img)
+
+
+# Sliding window width and height
+(winW, winH) = (32, 32)
 
 
 # Helper function for sliding window over a given frame
@@ -58,12 +92,16 @@ def pyramid(image, scale=1.5, min_size=(32, 32)):
         # yield the next image in the pyramid
         yield image
 
-frame_count = 1
 
 time_per_frame = timeit.default_timer()
 
-# Normally this would just be while(True), but easier to time a set amount.
-frame_cap = 100
+
+# Normally the loop would just be while(True), but it's easier to time a set amount.
+frame_cap = 500
+
+if window_save:
+    frame_cap = 1
+
 while(frame_count < frame_cap):
     # Capture frame-by-frame
 
@@ -76,10 +114,13 @@ while(frame_count < frame_cap):
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB);
     time_per_cvt = timeit.default_timer() - time_per_cvt
 
-    # Prod: Crop
+    # Crop the frame
     time_per_crop = timeit.default_timer()
     frame = frame[0:ch, cw:w]
     time_per_crop = timeit.default_timer() - time_per_crop
+
+    if window_save:
+        cv2.imwrite('./img/test/2_cropped.jpg'.format(frame_count), frame)
 
     # Display the resulting frame
     time_per_show = timeit.default_timer()
@@ -97,7 +138,7 @@ while(frame_count < frame_cap):
     win_count = 0
     ign_count = 0
     # loop over the image pyramid
-    for resized_frame in pyramid(frame, scale=1.5):
+    for resized_frame in pyramid(frame, scale=1.25):
         print('Frame {}, level {}'.format(frame_count, pyr_count))
         # loop over the sliding window for each layer of the pyramid
         for (x, y, window) in sliding_window(resized_frame, step_size=16, window_size=(winW, winH)):
