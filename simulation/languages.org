@@ -6,21 +6,26 @@ I'll try to list a few pros and cons
 Python that gets compiled to C code
 *** Pros
     Quite powerful
+
     Should be easy to write
 *** Cons
     Bit of a chore to set up
+
     Hard to include various libraries (like numpy)
 
 ** numba
 Adds a Just In Time (JIT) compiler for portions of your code
 *** Pros
     Easy to write, basically just adding a line here and there
+
     Can be used with most (all?) libraries
+
     Can lead to very significant speedups
 *** Cons
     Also a chore to set up, quite large downloads
-    Not sure how reliable the speedup is, i.e. how easy 
-        it is to consistently get a good increase
+
+    Not sure how reliable the speedup is, i.e. how easy it is to consistently get a good increase
+
     Can be hard to work out how to use properly
 
 ** Pypy
@@ -30,24 +35,33 @@ I think this looks like the best option. It's easy to use, has very decent perfo
 
 *** Pros
     Easy to set up
+
     Easy to use (just write normal Python)
+
     Can use most libraries
+
     Good speedups
+
     Very reliable speedups
 *** Cons
     Some work to set up libraries
+
     Not as good speedups as with numba (haven't compared to 
-    Cython)
+        Cython)
 
 ** C/C++
 Low-level, compiled languages by default
 *** Pros
     Very powerful and high performance
+
     Very well documented
+
     A ridiculous amount of libraries available
 *** Cons
     Somewhat hard to use (well)
+
     Lots to learn for people who aren't used to them
+
     Many things aren't as straightforward as in Python
 
 ** Some links
@@ -90,5 +104,16 @@ Low-level, compiled languages by default
     At a glance, I think ctypes looks the most promising, but some seem to think that SWIG is the best for small stuff
 **** Daughter card
     Communication over UART. This has been before, even with the Pynq-Z1. Should be quite easy(TM)
+    
+    PySerial
 
-    PySerial (import serial)
+    pip install pyserial
+
+    import serial
+
+    https://pythonhosted.org/pyserial/shortintro.html
+
+    https://groups.google.com/forum/#!topic/pynq_project/pkGXZN4RED0
+
+    Another alternative is to do the same as for the FPGA; i.e. use a C program (as this has to be programmed 
+    for the daughter card anyway)

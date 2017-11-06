@@ -3,8 +3,6 @@ from time import sleep
 
 class Daughter_Card:
     
-    # blocking_signs = ("Turn right ahead", "Turn left ahead", "Stop")
-    # non_blocking_signs = ("50 Km/h")
     blocking_signs = ('r', 'l', 's')
     non_blocking_signs = ('5', '7', '1')
     
@@ -17,7 +15,7 @@ class Daughter_Card:
     inputs = {'f': "drive", 'l': "look for tape", 'r': "turn right", 'l': "turn left", 's': "stop", '5': "set speed to 50 km/h", '7': "set speed to 70 km/h", '1': "set speed to 100 km/h"}
 
     def send(self, signal, prob):
-        if prob < 0:
+        if prob < 0 or signal == 'f':
             self.state = self.inputs[signal]
             print "\tPCB: the QNN predicts that this is most likely not a relevant sign"
             return 0

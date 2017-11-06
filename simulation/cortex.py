@@ -28,26 +28,25 @@ def get_most_probable_sign(res):
     return sign, temp_max
 
 
+# The last two layers of the QNN
+# They're used to make sense of the collective output of each frame
+# Will also be needed when using the actual QNN, as it won't include these layers
 def softmax(v):
     e_x = np.exp(v - np.max(v))
     return e_x / e_x.sum()
 def relulayer(v):
     return np.asarray(map(lambda x: x if x>0 else 0, v))
-    
-
-path = "pics/demo/"
-pics = []
-for (dirpath, dirnames, filenames) in walk(path):
-    for filename in filenames:
-        pics.append(path + filename)
-    break
-pics = open_images(pics)
 
 
-fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
-fsm = fsm_states[0]
+# FSM is most likely not needed here
+# fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
+# fsm = fsm_states[0]
 pcb = Daughter_Card()
 signals = {'Turn right ahead': 'r', 'Turn left ahead': 'l', 'Stop': 's', 'No entry for vehicular traffic': 'u', '50 Km/h': '5', '70 Km/h': '7', '100 Km/h': '1', 'Drive': 'f'}
+
+
+# Weights to prioritise the signs we use
+# Just ignoring the others leads to very wrong behaviour
 weights = [0.5] * 43
 weights[2] = 1 # 50 km/h
 weights[4] = 1 # 70 km/h
@@ -61,6 +60,16 @@ weights[34] = 1 # turn left
 print "Drive"
 sleep(3)
 
+
+path = "pics/demo/"
+pics = []
+for (dirpath, dirnames, filenames) in walk(path):
+    for filename in filenames:
+        pics.append(path + filename)
+    break
+pics = open_images(pics)
+
+
 # Keep a running average
 average = [0] * 43
 while True:
@@ -68,7 +77,8 @@ while True:
     # Call camera script
     # Get array of the images to use next
     print "Get next picture"
-    fsm = fsm_states[1]
+    # pics = ???
+    # fsm = fsm_states[1]
 
     print "Analyse frame with QNN"
     for pic in pics:
@@ -89,12 +99,13 @@ while True:
     print prob
     # Send UART signal to PCB
     if prob > 0.75:
-        fsm = fsm_states[pcb.send(signals.get(sign, 'f'), prob)]
+        fsm_states[pcb.send(signals.get(sign, 'f'), prob)]
     else:
-        fsm = fsm_states[pcb.send(signals['Drive'], -1)]
+        fsm_states[pcb.send(signals['Drive'], -1)]
                 
-    if fsm != "driving":
-        print "Wait for daughter card to perform action"
-        pcb.receive()
-        print "Action performed"
+    # if fsm != "driving":
+    print "Wait for daughter card to perform action"
+    pcb.receive()
+    print "Action performed"
+
     break
