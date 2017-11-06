@@ -39,8 +39,8 @@ def relulayer(v):
 
 
 # FSM is most likely not needed here
-# fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
-# fsm = fsm_states[0]
+fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
+fsm = fsm_states[0]
 pcb = Daughter_Card()
 signals = {'Turn right ahead': 'r', 'Turn left ahead': 'l', 'Stop': 's', 'No entry for vehicular traffic': 'u', '50 Km/h': '5', '70 Km/h': '7', '100 Km/h': '1', 'Drive': 'f'}
 
@@ -57,10 +57,6 @@ weights[33] = 1 # turn right
 weights[34] = 1 # turn left
 
 
-print "Drive"
-sleep(3)
-
-
 path = "pics/demo/"
 pics = []
 for (dirpath, dirnames, filenames) in walk(path):
@@ -70,42 +66,52 @@ for (dirpath, dirnames, filenames) in walk(path):
 pics = open_images(pics)
 
 
-# Keep a running average
-average = [0] * 43
-while True:
-    # Iterate cycle one step, i.e. take another picture and process it, replacing the old ones
-    # Call camera script
-    # Get array of the images to use next
-    print "Get next picture"
-    # pics = ???
-    # fsm = fsm_states[1]
+def main():
+    fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
+    fsm = fsm_states[0]
+    # Keep a running average
+    average = [0] * 43
+    while True:
+        print "Drive"
+        # sleep(3)
 
-    print "Analyse frame with QNN"
-    for pic in pics:
-        # Replace with call to actual QNN on FPGA
-        # Will be done in a C++ script?
-        res = gtsrb_predict(pic[1])
+        # Iterate cycle one step, i.e. take another picture and process it, replacing the old ones
+        # Call camera script
+        # Get array of the images to use next
+        print "Get next picture"
+        # pics = ???
+        # fsm = fsm_states[1]
 
-        for i in range(len(res)):
-            if res[i] > 0.9:
-                average[i] += res[i]*weights[i]
+        print "Analyse frame with QNN"
+        for pic in pics:
+            # Replace with call to actual QNN on FPGA
+            # Will be done in a C++ script?
+            res = gtsrb_predict(pic[1])
+            
+            for i in range(len(res)):
+                if res[i] > 0.9:
+                    average[i] += res[i]*weights[i]
+                    
+        average = softmax(average)
+        average = relulayer(average)
+                    
+        # Send a single result per frame
+        print "Send result array to daughter card"
+        sign, prob = get_most_probable_sign(average)
+        print prob
+        # Send UART signal to PCB
+        if prob > 0.75:
+            fsm_states = fsm_states[pcb.send(signals.get(sign, 'f'), prob)]
+        else:
+            fsm_states = fsm_states[pcb.send(signals['Drive'], -1)]
+            
+        # if fsm != "driving":
+        print "Wait for daughter card to perform action"
+        pcb.receive()
+        print "Action performed"
+        
+        # break
 
-    average = softmax(average)
-    average = relulayer(average)
 
-    # Send a single result per frame
-    print "Send result array to daughter card"
-    sign, prob = get_most_probable_sign(average)
-    print prob
-    # Send UART signal to PCB
-    if prob > 0.75:
-        fsm_states[pcb.send(signals.get(sign, 'f'), prob)]
-    else:
-        fsm_states[pcb.send(signals['Drive'], -1)]
-                
-    # if fsm != "driving":
-    print "Wait for daughter card to perform action"
-    pcb.receive()
-    print "Action performed"
-
-    break
+if  __name__ =='__main__':
+    main()

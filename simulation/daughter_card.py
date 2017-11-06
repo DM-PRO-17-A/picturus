@@ -1,18 +1,17 @@
 from time import sleep
 
 
-class Daughter_Card:
-    
-    blocking_signs = ('r', 'l', 's')
-    non_blocking_signs = ('5', '7', '1')
-    
-    
-    actions = ("drive", "increase speed", "perform action", "looking for tape")
-    effort = {"drive": 0.1, "increase speed": 1, "turn right": 3, "turn left": 3, "set speed to 50 km/h": 0.5, "set speed to 70 km/h": 0.5, "set speed to 100 km/h": 0.5, "stop": 0.2}
-    state = actions[0]
+class Daughter_Card(object):
+    def __init__(self):
+        self.blocking_signs = ('r', 'l', 's')
+        self.non_blocking_signs = ('5', '7', '1')
+            
+        self.actions = ("drive", "increase speed", "perform action", "looking for tape")
+        self.effort = {"drive": 0.1, "increase speed": 1, "turn right": 3, "turn left": 3, "set speed to 50 km/h": 0.5, "set speed to 70 km/h": 0.5, "set speed to 100 km/h": 0.5, "stop": 0.2}
+        self.state = self.actions[0]
         
+        self.inputs = {'f': "drive", 'l': "look for tape", 'r': "turn right", 'l': "turn left", 's': "stop", '5': "set speed to 50 km/h", '7': "set speed to 70 km/h", '1': "set speed to 100 km/h"}
 
-    inputs = {'f': "drive", 'l': "look for tape", 'r': "turn right", 'l': "turn left", 's': "stop", '5': "set speed to 50 km/h", '7': "set speed to 70 km/h", '1': "set speed to 100 km/h"}
 
     def send(self, signal, prob):
         if prob < 0 or signal == 'f':

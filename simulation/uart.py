@@ -4,7 +4,7 @@
 import serial
 
 
-class UART:
+class UART(object):
 
     # Set up serial communication
     # python -m serial.tools.list_ports
