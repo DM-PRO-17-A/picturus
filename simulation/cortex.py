@@ -69,6 +69,7 @@ pics = open_images(pics)
 def main():
     fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
     fsm = fsm_states[0]
+    
     # Keep a running average
     average = [0] * 43
     while True:
@@ -106,13 +107,13 @@ def main():
             fsm_states = fsm_states[pcb.send(signals.get(sign, 'f'), prob)]
         else:
             fsm_states = fsm_states[pcb.send(signals['Drive'], -1)]
-            
-        # if fsm != "driving":
+                
+    if fsm != "driving":
         print "Wait for daughter card to perform action"
         pcb.receive()
         print "Action performed"
         
-        break
+    break
 
 
 if  __name__ =='__main__':
