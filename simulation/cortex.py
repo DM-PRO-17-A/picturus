@@ -27,6 +27,9 @@ def get_most_probable_sign(res):
                 sign = gtsrb_classes[index]
     return sign, temp_max
 
+# def get_most_probable_sign(res):
+   # i = np.argmax(res)
+   # return gtsrb_classes[i], res[i]
 
 # The last layer of the QNN
 # Used to make sense of the collective output of each frame
@@ -54,7 +57,7 @@ weights[33] = 1 # turn right
 weights[34] = 1 # turn left
 
 
-path = "pics/demo/"
+path = "pics/in/"
 pics = []
 for (dirpath, dirnames, filenames) in walk(path):
     for filename in filenames:
