@@ -4,7 +4,7 @@ from PIL import Image
 from os import walk
 from scipy import ndimage
 from scipy import misc
-from scipy import spatial
+#from scipy import spatial
 import numpy as np
 import math
 from datetime import datetime
@@ -30,7 +30,7 @@ def get_colored_region(image,colors,radii):
 def get_center_of_mass(image):
     x, y = image.shape
     m = image.astype(np.float)
-    m = m / np.sum(m)
+    m = m / max(np.sum(m),1)
     dx, dy = np.sum(m,1), np.sum(m,0)
     cx, cy = np.sum(dx * np.arange(x)), np.sum(dy * np.arange(y))
     return int(math.ceil(cx)), int(math.ceil(cy))
@@ -45,10 +45,36 @@ def get_size(image):
     size = int(math.ceil((w+h)/2))
     return size
 
+def dilate(img, structure):
+    x, y = structure.shape
+    x, y = int((x-1)/2), int((y-1)/2)
+    X, Y = img.shape
+    R, C = X+(2*x), Y+(2*y)
+    new_img = np.zeros((R, C))
+    new_img[x:R-x, y:C-y] = img.astype(np.int)
+    temp = new_img.copy()
+    for c in xrange(y, C-y):
+        for r in xrange(x, R-x):
+            if img[r-x][c-y] == 1:
+                new_img[(r-x):(r+x+1), (c-y):(c+y+1)] = new_img[(r-x):(r+x+1),(c-y):(c+y+1)]+structure
+#                new_img[(r-x):(r+x+1), (c-y):(c+y+1)] += structure
+    new_img = new_img[x:(R-x), y:(C-y)]
+    return new_img.astype(np.bool_)
+
+def dilation(image, structure, iterations=1):
+    if iterations == 1:
+        return dilate(image.astype(np.bool_),structure)
+    else:
+        result = dilate(image.astype(np.bool_),structure)
+        for it in xrange(iterations-1):
+            result = dilate(result, structure)
+        return result
+
 # Get coordinates of object
 def get_coords(seg_img):
-    struct = np.ones((2,2))
-    img = ndimage.binary_dilation(seg_img, struct, 3)
+    struct = np.ones((3,3))
+    #img = ndimage.binary_dilation(seg_img, struct, 3)
+    img = dilation(seg_img, struct, 3).astype(np.int)
     img = ndimage.binary_fill_holes(img)
     structure1 = np.ones((5,5))
     res=ndimage.binary_hit_or_miss(img,structure1=structure1,origin1=0).astype(np.int)
@@ -87,7 +113,8 @@ for (dirpath, dirnames, filenames) in walk(in_path):
         if '.jpg' in filename:
             img = np.array(Image.open(in_path + filename))
             #s = time()
-            p = preprocessing(img, colors, radii, 3)
+            #p = preprocessing(img, colors, radii, 3)
+            p = preprocessing(img, colors, radii, 4)
             if p.shape == (2,2):
                 continue
             #print time()-s
