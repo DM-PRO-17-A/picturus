@@ -1,0 +1,882 @@
+Results for 30-signs: 
+
+	 Results for tests/speed/30/00001.ppm:
+		QNN predicts 30 Km/h with probability 67%
+		QNN predicts 50 Km/h with probability 5%
+		QNN predicts 80 Km/h with probability 27%
+
+	 Results for tests/speed/30/00024.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00076.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00091.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00100.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00110.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00118.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00122.ppm:
+		QNN predicts 30 Km/h with probability 19%
+		QNN predicts 70 Km/h with probability 73%
+		QNN predicts 80 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 3%
+
+	 Results for tests/speed/30/00128.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00131.ppm:
+		QNN predicts 60 Km/h with probability 95%
+		QNN predicts 80 Km/h with probability 2%
+
+	 Results for tests/speed/30/00175.ppm:
+		QNN predicts 20 Km/h with probability 2%
+		QNN predicts 30 Km/h with probability 88%
+		QNN predicts 50 Km/h with probability 2%
+		QNN predicts 70 Km/h with probability 2%
+		QNN predicts 80 Km/h with probability 3%
+
+	 Results for tests/speed/30/00187.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00203.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00223.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00264.ppm:
+		QNN predicts 20 Km/h with probability 1%
+		QNN predicts 30 Km/h with probability 96%
+		QNN predicts 70 Km/h with probability 1%
+
+	 Results for tests/speed/30/00279.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00284.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00285.ppm:
+		QNN predicts 20 Km/h with probability 5%
+		QNN predicts 30 Km/h with probability 94%
+
+	 Results for tests/speed/30/00290.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00295.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00307.ppm:
+		QNN predicts 30 Km/h with probability 98%
+		QNN predicts 50 Km/h with probability 1%
+
+	 Results for tests/speed/30/00314.ppm:
+		QNN predicts 30 Km/h with probability 13%
+		QNN predicts 80 Km/h with probability 3%
+		QNN predicts 100 Km/h with probability 73%
+		QNN predicts Prohibited for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 2%
+		QNN predicts Road works with probability 2%
+
+	 Results for tests/speed/30/00375.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00378.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00394.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00445.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00454.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00473.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00508.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00517.ppm:
+		QNN predicts 30 Km/h with probability 89%
+		QNN predicts 80 Km/h with probability 10%
+
+	 Results for tests/speed/30/00533.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00545.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00546.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00547.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00568.ppm:
+		QNN predicts 30 Km/h with probability 82%
+		QNN predicts 50 Km/h with probability 17%
+
+	 Results for tests/speed/30/00583.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00612.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00617.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00622.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00644.ppm:
+		QNN predicts 30 Km/h with probability 85%
+		QNN predicts 50 Km/h with probability 10%
+		QNN predicts 80 Km/h with probability 2%
+		QNN predicts 100 Km/h with probability 1%
+
+	 Results for tests/speed/30/00648.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00698.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00718.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00739.ppm:
+		QNN predicts 30 Km/h with probability 88%
+		QNN predicts 80 Km/h with probability 6%
+		QNN predicts End 80 Km/h with probability 1%
+		QNN predicts 100 Km/h with probability 4%
+
+	 Results for tests/speed/30/00741.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00766.ppm:
+		QNN predicts 20 Km/h with probability 2%
+		QNN predicts 30 Km/h with probability 95%
+		QNN predicts 50 Km/h with probability 2%
+
+	 Results for tests/speed/30/00792.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00794.ppm:
+		QNN predicts 20 Km/h with probability 19%
+		QNN predicts 30 Km/h with probability 13%
+		QNN predicts 50 Km/h with probability 54%
+		QNN predicts 70 Km/h with probability 2%
+		QNN predicts End 80 Km/h with probability 2%
+		QNN predicts No overtaking with probability 2%
+		QNN predicts Ahead or left only with probability 1%
+
+	 Results for tests/speed/30/00818.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00832.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00846.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00852.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00856.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00864.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00875.ppm:
+		QNN predicts 30 Km/h with probability 27%
+		QNN predicts 60 Km/h with probability 44%
+		QNN predicts Prohibited for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 25%
+
+	 Results for tests/speed/30/00880.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00881.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00887.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00910.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00923.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00934.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00947.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00955.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/00982.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01001.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01021.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01029.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01092.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01129.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01153.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01159.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01176.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01226.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01251.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01281.ppm:
+		QNN predicts 30 Km/h with probability 68%
+		QNN predicts 100 Km/h with probability 31%
+
+	 Results for tests/speed/30/01303.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01334.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01337.ppm:
+		QNN predicts 20 Km/h with probability 3%
+		QNN predicts 30 Km/h with probability 91%
+		QNN predicts 80 Km/h with probability 4%
+
+	 Results for tests/speed/30/01409.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01447.ppm:
+		QNN predicts 30 Km/h with probability 96%
+		QNN predicts 80 Km/h with probability 2%
+
+	 Results for tests/speed/30/01482.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01506.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01515.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01531.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01555.ppm:
+		QNN predicts 30 Km/h with probability 98%
+
+	 Results for tests/speed/30/01565.ppm:
+		QNN predicts 30 Km/h with probability 85%
+		QNN predicts 50 Km/h with probability 14%
+
+	 Results for tests/speed/30/01571.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01602.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01649.ppm:
+		QNN predicts 30 Km/h with probability 97%
+		QNN predicts 120 Km/h with probability 1%
+
+	 Results for tests/speed/30/01677.ppm:
+		QNN predicts 30 Km/h with probability 93%
+		QNN predicts 50 Km/h with probability 5%
+
+	 Results for tests/speed/30/01688.ppm:
+		QNN predicts 30 Km/h with probability 82%
+		QNN predicts 80 Km/h with probability 15%
+
+	 Results for tests/speed/30/01710.ppm:
+		QNN predicts 30 Km/h with probability 92%
+		QNN predicts 80 Km/h with probability 5%
+		QNN predicts 100 Km/h with probability 1%
+
+	 Results for tests/speed/30/01711.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01733.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01768.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01788.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01844.ppm:
+		QNN predicts 30 Km/h with probability 53%
+		QNN predicts 50 Km/h with probability 13%
+		QNN predicts 80 Km/h with probability 32%
+
+	 Results for tests/speed/30/01863.ppm:
+		QNN predicts 20 Km/h with probability 46%
+		QNN predicts 30 Km/h with probability 50%
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 1%
+
+	 Results for tests/speed/30/01883.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01885.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01892.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01929.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01932.ppm:
+		QNN predicts 30 Km/h with probability 28%
+		QNN predicts 80 Km/h with probability 70%
+
+	 Results for tests/speed/30/01942.ppm:
+		QNN predicts 30 Km/h with probability 97%
+		QNN predicts 80 Km/h with probability 2%
+
+	 Results for tests/speed/30/01955.ppm:
+		QNN predicts 30 Km/h with probability 98%
+		QNN predicts 50 Km/h with probability 1%
+
+	 Results for tests/speed/30/01960.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/01968.ppm:
+		QNN predicts 30 Km/h with probability 60%
+		QNN predicts 50 Km/h with probability 11%
+		QNN predicts 70 Km/h with probability 20%
+		QNN predicts 80 Km/h with probability 6%
+
+	 Results for tests/speed/30/01973.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02024.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02026.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02043.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02051.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02055.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02073.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02088.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02099.ppm:
+		QNN predicts 30 Km/h with probability 97%
+		QNN predicts 50 Km/h with probability 1%
+
+	 Results for tests/speed/30/02139.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02154.ppm:
+		QNN predicts 20 Km/h with probability 26%
+		QNN predicts 30 Km/h with probability 5%
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 70 Km/h with probability 2%
+		QNN predicts Give way with probability 43%
+		QNN predicts Pass by on right with probability 18%
+
+	 Results for tests/speed/30/02208.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02215.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02240.ppm:
+		QNN predicts 30 Km/h with probability 89%
+		QNN predicts 80 Km/h with probability 10%
+
+	 Results for tests/speed/30/02244.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02250.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02278.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02290.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02301.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02305.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02307.ppm:
+		QNN predicts 30 Km/h with probability 67%
+		QNN predicts 70 Km/h with probability 1%
+		QNN predicts 80 Km/h with probability 30%
+
+	 Results for tests/speed/30/02312.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02313.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02335.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02343.ppm:
+		QNN predicts 30 Km/h with probability 90%
+		QNN predicts 80 Km/h with probability 8%
+
+	 Results for tests/speed/30/02356.ppm:
+		QNN predicts 30 Km/h with probability 98%
+		QNN predicts 120 Km/h with probability 1%
+
+	 Results for tests/speed/30/02367.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02372.ppm:
+		QNN predicts 30 Km/h with probability 70%
+		QNN predicts 70 Km/h with probability 28%
+
+	 Results for tests/speed/30/02391.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02405.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02429.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02441.ppm:
+		QNN predicts 30 Km/h with probability 16%
+		QNN predicts 50 Km/h with probability 61%
+		QNN predicts No overtaking with probability 5%
+		QNN predicts No overtaking for large trucks with probability 1%
+		QNN predicts Stop with probability 8%
+		QNN predicts Road works with probability 1%
+		QNN predicts Turn right ahead with probability 2%
+
+	 Results for tests/speed/30/02469.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02527.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02533.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02550.ppm:
+		QNN predicts 30 Km/h with probability 61%
+		QNN predicts 70 Km/h with probability 8%
+		QNN predicts 80 Km/h with probability 28%
+		QNN predicts End 80 Km/h with probability 1%
+
+	 Results for tests/speed/30/02558.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02580.ppm:
+		QNN predicts 30 Km/h with probability 94%
+		QNN predicts 80 Km/h with probability 4%
+
+	 Results for tests/speed/30/02616.ppm:
+		QNN predicts 30 Km/h with probability 94%
+		QNN predicts 80 Km/h with probability 3%
+
+	 Results for tests/speed/30/02632.ppm:
+		QNN predicts 30 Km/h with probability 59%
+		QNN predicts 70 Km/h with probability 38%
+
+	 Results for tests/speed/30/02663.ppm:
+		QNN predicts 30 Km/h with probability 11%
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 70 Km/h with probability 86%
+
+	 Results for tests/speed/30/02679.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02680.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02694.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02705.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02712.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02713.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02714.ppm:
+		QNN predicts 30 Km/h with probability 81%
+		QNN predicts 80 Km/h with probability 17%
+
+	 Results for tests/speed/30/02739.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02742.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02747.ppm:
+		QNN predicts 30 Km/h with probability 98%
+
+	 Results for tests/speed/30/02811.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02816.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02827.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02835.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02849.ppm:
+		QNN predicts 30 Km/h with probability 98%
+
+	 Results for tests/speed/30/02862.ppm:
+		QNN predicts 30 Km/h with probability 77%
+		QNN predicts 50 Km/h with probability 1%
+		QNN predicts 80 Km/h with probability 17%
+		QNN predicts Stop with probability 1%
+
+	 Results for tests/speed/30/02867.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02869.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02874.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02916.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02919.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02928.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/02931.ppm:
+		QNN predicts 30 Km/h with probability 43%
+		QNN predicts 70 Km/h with probability 9%
+		QNN predicts 80 Km/h with probability 46%
+
+	 Results for tests/speed/30/02955.ppm:
+		QNN predicts 30 Km/h with probability 93%
+		QNN predicts 50 Km/h with probability 5%
+
+	 Results for tests/speed/30/02975.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03002.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03031.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03037.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03038.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03051.ppm:
+		QNN predicts 30 Km/h with probability 84%
+		QNN predicts 70 Km/h with probability 15%
+
+	 Results for tests/speed/30/03071.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03091.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03118.ppm:
+		QNN predicts 30 Km/h with probability 96%
+		QNN predicts 50 Km/h with probability 2%
+
+	 Results for tests/speed/30/03132.ppm:
+		QNN predicts 30 Km/h with probability 96%
+		QNN predicts 70 Km/h with probability 2%
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/speed/30/03135.ppm:
+		QNN predicts 30 Km/h with probability 87%
+		QNN predicts 50 Km/h with probability 12%
+
+	 Results for tests/speed/30/03136.ppm:
+		QNN predicts 30 Km/h with probability 63%
+		QNN predicts 50 Km/h with probability 29%
+		QNN predicts 70 Km/h with probability 7%
+
+	 Results for tests/speed/30/03147.ppm:
+		QNN predicts 30 Km/h with probability 17%
+		QNN predicts 50 Km/h with probability 3%
+		QNN predicts 70 Km/h with probability 37%
+		QNN predicts 80 Km/h with probability 4%
+		QNN predicts 100 Km/h with probability 30%
+		QNN predicts 120 Km/h with probability 4%
+
+	 Results for tests/speed/30/03153.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03175.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03198.ppm:
+		QNN predicts 30 Km/h with probability 6%
+		QNN predicts 70 Km/h with probability 92%
+
+	 Results for tests/speed/30/03202.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03208.ppm:
+		QNN predicts 30 Km/h with probability 57%
+		QNN predicts 70 Km/h with probability 41%
+
+	 Results for tests/speed/30/03211.ppm:
+		QNN predicts 30 Km/h with probability 69%
+		QNN predicts 50 Km/h with probability 30%
+
+	 Results for tests/speed/30/03237.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03247.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03248.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03277.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03289.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03302.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03304.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03321.ppm:
+		QNN predicts 30 Km/h with probability 98%
+		QNN predicts 80 Km/h with probability 1%
+
+	 Results for tests/speed/30/03323.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03331.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03335.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03351.ppm:
+		QNN predicts 30 Km/h with probability 63%
+		QNN predicts 50 Km/h with probability 12%
+		QNN predicts 100 Km/h with probability 22%
+
+	 Results for tests/speed/30/03382.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03408.ppm:
+		QNN predicts 20 Km/h with probability 14%
+		QNN predicts 30 Km/h with probability 54%
+		QNN predicts 50 Km/h with probability 25%
+		QNN predicts 80 Km/h with probability 4%
+
+	 Results for tests/speed/30/03415.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03439.ppm:
+		QNN predicts 20 Km/h with probability 6%
+		QNN predicts 30 Km/h with probability 46%
+		QNN predicts 60 Km/h with probability 1%
+		QNN predicts 80 Km/h with probability 24%
+		QNN predicts 100 Km/h with probability 1%
+		QNN predicts 120 Km/h with probability 19%
+
+	 Results for tests/speed/30/03445.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03452.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03461.ppm:
+		QNN predicts 30 Km/h with probability 94%
+		QNN predicts 50 Km/h with probability 5%
+
+	 Results for tests/speed/30/03468.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03475.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03483.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03522.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03524.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03534.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03627.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03629.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03634.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03638.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03645.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03646.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03673.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03691.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/03759.ppm:
+		QNN predicts 30 Km/h with probability 98%
+
+	 Results for tests/speed/30/04734.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/04735.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/04759.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/04864.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/04888.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/04890.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/04919.ppm:
+		QNN predicts 30 Km/h with probability 96%
+		QNN predicts 50 Km/h with probability 3%
+
+	 Results for tests/speed/30/04920.ppm:
+		QNN predicts 30 Km/h with probability 36%
+		QNN predicts 50 Km/h with probability 63%
+
+	 Results for tests/speed/30/05003.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/05006.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/05098.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/05106.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/07899.ppm:
+		QNN predicts 20 Km/h with probability 1%
+		QNN predicts 30 Km/h with probability 56%
+		QNN predicts 60 Km/h with probability 4%
+		QNN predicts 80 Km/h with probability 35%
+		QNN predicts Prohibited for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses with probability 1%
+
+	 Results for tests/speed/30/07916.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/07945.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/07951.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/07999.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/08089.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/08127.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/08623.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/08634.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/08687.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/08781.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/08813.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/08842.ppm:
+		QNN predicts 30 Km/h with probability 36%
+		QNN predicts 50 Km/h with probability 62%
+
+	 Results for tests/speed/30/08908.ppm:
+		QNN predicts 30 Km/h with probability 99%
+
+	 Results for tests/speed/30/10841.ppm:
+		QNN predicts 30 Km/h with probability 99%
+

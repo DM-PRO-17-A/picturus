@@ -1,0 +1,332 @@
+Results for left-signs: 
+
+	 Results for tests/left/00032.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/00073.ppm:
+		QNN predicts Turn left ahead with probability 82%
+		QNN predicts Ahead only with probability 5%
+		QNN predicts Ahead or right only with probability 4%
+		QNN predicts Pass by on right with probability 1%
+		QNN predicts Roundabout with probability 4%
+
+	 Results for tests/left/00254.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/00272.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/00276.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/00337.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/00386.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/00429.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/00432.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/00433.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/00948.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01053.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01173.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01235.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01289.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01336.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01378.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01463.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01495.ppm:
+		QNN predicts Turn left ahead with probability 89%
+		QNN predicts Pass by on right with probability 10%
+
+	 Results for tests/left/01646.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01691.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01765.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01914.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01926.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/01974.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/02000.ppm:
+		QNN predicts Turn left ahead with probability 96%
+		QNN predicts Ahead only with probability 1%
+
+	 Results for tests/left/02308.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/02406.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/02582.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/02618.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/02628.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/02643.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/02794.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/02832.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/02859.ppm:
+		QNN predicts Turn left ahead with probability 94%
+		QNN predicts Pass by on right with probability 5%
+
+	 Results for tests/left/02901.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/03006.ppm:
+		QNN predicts Road slippery when wet or dirty with probability 1%
+		QNN predicts Turn left ahead with probability 93%
+		QNN predicts Ahead only with probability 1%
+		QNN predicts Ahead or right only with probability 2%
+
+	 Results for tests/left/03076.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/03082.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/03178.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/03264.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/03306.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/03751.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/03971.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/04040.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/04123.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/04522.ppm:
+		QNN predicts Turn left ahead with probability 98%
+
+	 Results for tests/left/04603.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/05160.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/05365.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/05406.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/05465.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/05520.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/05548.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/05780.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/05794.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/06027.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/06208.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/06379.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/06472.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/06491.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/06501.ppm:
+		QNN predicts Turn left ahead with probability 98%
+
+	 Results for tests/left/06665.ppm:
+		QNN predicts Turn left ahead with probability 98%
+		QNN predicts Pass by on right with probability 1%
+
+	 Results for tests/left/06698.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/06751.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/07016.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/07270.ppm:
+		QNN predicts Turn left ahead with probability 80%
+		QNN predicts Pass by on right with probability 16%
+
+	 Results for tests/left/07281.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/07621.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/07637.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/07788.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/07873.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/07978.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/08021.ppm:
+		QNN predicts Turn left ahead with probability 93%
+		QNN predicts Pass by on right with probability 5%
+
+	 Results for tests/left/08097.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/08147.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/08193.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/08304.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/08320.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/08625.ppm:
+		QNN predicts Turn left ahead with probability 98%
+		QNN predicts Ahead only with probability 1%
+
+	 Results for tests/left/08782.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/08833.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/09302.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/09329.ppm:
+		QNN predicts Turn left ahead with probability 97%
+		QNN predicts Pass by on right with probability 2%
+
+	 Results for tests/left/09380.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/09386.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/09428.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/09722.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/09751.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/09801.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/10085.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/10613.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/11172.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/11384.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/11400.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/11483.ppm:
+		QNN predicts Turn left ahead with probability 94%
+		QNN predicts Ahead only with probability 2%
+		QNN predicts Pass by on right with probability 2%
+
+	 Results for tests/left/11714.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/11741.ppm:
+		QNN predicts 30 Km/h with probability 53%
+		QNN predicts 70 Km/h with probability 18%
+		QNN predicts Turn right ahead with probability 1%
+		QNN predicts Pass by on right with probability 3%
+		QNN predicts Pass by on left with probability 3%
+		QNN predicts Roundabout with probability 18%
+
+	 Results for tests/left/11751.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/11962.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/12493.ppm:
+		QNN predicts Turn left ahead with probability 99%
+
+	 Results for tests/left/12506.ppm:
+		QNN predicts Road works with probability 1%
+		QNN predicts Turn left ahead with probability 88%
+		QNN predicts Ahead only with probability 8%
+

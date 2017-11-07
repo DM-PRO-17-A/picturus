@@ -1,0 +1,872 @@
+Results for pyramid-test-signs: 
+
+	 Results for tests/pyramid-test/IMG-1006.jpg:
+		QNN predicts 120 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-1026.jpg:
+		QNN predicts 70 Km/h with probability 90%
+
+	 Results for tests/pyramid-test/IMG-103.jpg:
+		QNN predicts 30 Km/h with probability 89%
+
+	 Results for tests/pyramid-test/IMG-1030.jpg:
+		QNN predicts 70 Km/h with probability 80%
+
+	 Results for tests/pyramid-test/IMG-1032.jpg:
+		QNN predicts 30 Km/h with probability 53%
+
+	 Results for tests/pyramid-test/IMG-1034.jpg:
+		QNN predicts 30 Km/h with probability 81%
+
+	 Results for tests/pyramid-test/IMG-1035.jpg:
+		QNN predicts 70 Km/h with probability 69%
+
+	 Results for tests/pyramid-test/IMG-1036.jpg:
+		QNN predicts 70 Km/h with probability 51%
+
+	 Results for tests/pyramid-test/IMG-104.jpg:
+		QNN predicts 30 Km/h with probability 67%
+
+	 Results for tests/pyramid-test/IMG-1044.jpg:
+		QNN predicts 30 Km/h with probability 72%
+
+	 Results for tests/pyramid-test/IMG-105.jpg:
+		QNN predicts 30 Km/h with probability 80%
+
+	 Results for tests/pyramid-test/IMG-1068.jpg:
+		QNN predicts 70 Km/h with probability 53%
+
+	 Results for tests/pyramid-test/IMG-1071.jpg:
+		QNN predicts 70 Km/h with probability 78%
+
+	 Results for tests/pyramid-test/IMG-1072.jpg:
+		QNN predicts 30 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-1073.jpg:
+		QNN predicts 70 Km/h with probability 80%
+
+	 Results for tests/pyramid-test/IMG-1076.jpg:
+		QNN predicts 50 Km/h with probability 79%
+
+	 Results for tests/pyramid-test/IMG-1080.jpg:
+		QNN predicts 30 Km/h with probability 84%
+
+	 Results for tests/pyramid-test/IMG-1081.jpg:
+		QNN predicts 30 Km/h with probability 74%
+
+	 Results for tests/pyramid-test/IMG-1082.jpg:
+		QNN predicts 70 Km/h with probability 92%
+
+	 Results for tests/pyramid-test/IMG-1083.jpg:
+		QNN predicts 70 Km/h with probability 98%
+
+	 Results for tests/pyramid-test/IMG-1085.jpg:
+		QNN predicts 70 Km/h with probability 77%
+
+	 Results for tests/pyramid-test/IMG-1088.jpg:
+		QNN predicts 100 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-1089.jpg:
+		QNN predicts 100 Km/h with probability 68%
+
+	 Results for tests/pyramid-test/IMG-1102.jpg:
+		QNN predicts Turn right ahead with probability 58%
+
+	 Results for tests/pyramid-test/IMG-1103.jpg:
+		QNN predicts Turn right ahead with probability 53%
+
+	 Results for tests/pyramid-test/IMG-1109.jpg:
+		QNN predicts 50 Km/h with probability 83%
+
+	 Results for tests/pyramid-test/IMG-1110.jpg:
+		QNN predicts 70 Km/h with probability 97%
+
+	 Results for tests/pyramid-test/IMG-1111.jpg:
+		QNN predicts 70 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-1112.jpg:
+		QNN predicts 70 Km/h with probability 90%
+
+	 Results for tests/pyramid-test/IMG-1113.jpg:
+		QNN predicts 50 Km/h with probability 53%
+
+	 Results for tests/pyramid-test/IMG-1115.jpg:
+		QNN predicts 50 Km/h with probability 85%
+
+	 Results for tests/pyramid-test/IMG-1116.jpg:
+		QNN predicts 30 Km/h with probability 95%
+
+	 Results for tests/pyramid-test/IMG-1117.jpg:
+		QNN predicts 30 Km/h with probability 94%
+
+	 Results for tests/pyramid-test/IMG-1118.jpg:
+		QNN predicts 30 Km/h with probability 97%
+
+	 Results for tests/pyramid-test/IMG-1119.jpg:
+		QNN predicts 30 Km/h with probability 79%
+
+	 Results for tests/pyramid-test/IMG-1121.jpg:
+		QNN predicts 70 Km/h with probability 92%
+
+	 Results for tests/pyramid-test/IMG-1122.jpg:
+		QNN predicts 70 Km/h with probability 64%
+
+	 Results for tests/pyramid-test/IMG-1123.jpg:
+		QNN predicts 70 Km/h with probability 68%
+
+	 Results for tests/pyramid-test/IMG-1124.jpg:
+		QNN predicts 100 Km/h with probability 77%
+
+	 Results for tests/pyramid-test/IMG-1126.jpg:
+		QNN predicts 100 Km/h with probability 89%
+
+	 Results for tests/pyramid-test/IMG-1127.jpg:
+		QNN predicts 100 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-1128.jpg:
+		QNN predicts 100 Km/h with probability 80%
+
+	 Results for tests/pyramid-test/IMG-114.jpg:
+		QNN predicts 100 Km/h with probability 52%
+
+	 Results for tests/pyramid-test/IMG-1147.jpg:
+		QNN predicts 60 Km/h with probability 89%
+
+	 Results for tests/pyramid-test/IMG-115.jpg:
+		QNN predicts 60 Km/h with probability 84%
+
+	 Results for tests/pyramid-test/IMG-1150.jpg:
+		QNN predicts 70 Km/h with probability 90%
+
+	 Results for tests/pyramid-test/IMG-1151.jpg:
+		QNN predicts 70 Km/h with probability 56%
+
+	 Results for tests/pyramid-test/IMG-1153.jpg:
+		QNN predicts 30 Km/h with probability 78%
+
+	 Results for tests/pyramid-test/IMG-1154.jpg:
+		QNN predicts 50 Km/h with probability 82%
+
+	 Results for tests/pyramid-test/IMG-1155.jpg:
+		QNN predicts 30 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-1156.jpg:
+		QNN predicts 30 Km/h with probability 60%
+
+	 Results for tests/pyramid-test/IMG-1158.jpg:
+		QNN predicts 30 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-1159.jpg:
+		QNN predicts 70 Km/h with probability 58%
+
+	 Results for tests/pyramid-test/IMG-116.jpg:
+		QNN predicts 60 Km/h with probability 80%
+
+	 Results for tests/pyramid-test/IMG-1163.jpg:
+		QNN predicts 70 Km/h with probability 89%
+
+	 Results for tests/pyramid-test/IMG-1167.jpg:
+		QNN predicts 100 Km/h with probability 75%
+
+	 Results for tests/pyramid-test/IMG-117.jpg:
+		QNN predicts 60 Km/h with probability 55%
+
+	 Results for tests/pyramid-test/IMG-1175.jpg:
+		QNN predicts 80 Km/h with probability 55%
+
+	 Results for tests/pyramid-test/IMG-1187.jpg:
+		QNN predicts 70 Km/h with probability 62%
+
+	 Results for tests/pyramid-test/IMG-119.jpg:
+		QNN predicts 60 Km/h with probability 62%
+
+	 Results for tests/pyramid-test/IMG-1193.jpg:
+		QNN predicts 30 Km/h with probability 52%
+
+	 Results for tests/pyramid-test/IMG-1228.jpg:
+		QNN predicts 30 Km/h with probability 88%
+
+	 Results for tests/pyramid-test/IMG-1229.jpg:
+		QNN predicts 30 Km/h with probability 84%
+
+	 Results for tests/pyramid-test/IMG-1231.jpg:
+		QNN predicts 30 Km/h with probability 56%
+
+	 Results for tests/pyramid-test/IMG-1234.jpg:
+		QNN predicts 80 Km/h with probability 85%
+
+	 Results for tests/pyramid-test/IMG-124.jpg:
+		QNN predicts 20 Km/h with probability 51%
+
+	 Results for tests/pyramid-test/IMG-1245.jpg:
+		QNN predicts Stop with probability 64%
+
+	 Results for tests/pyramid-test/IMG-1257.jpg:
+		QNN predicts 30 Km/h with probability 54%
+
+	 Results for tests/pyramid-test/IMG-1267.jpg:
+		QNN predicts 30 Km/h with probability 95%
+
+	 Results for tests/pyramid-test/IMG-1269.jpg:
+		QNN predicts 30 Km/h with probability 81%
+
+	 Results for tests/pyramid-test/IMG-1270.jpg:
+		QNN predicts 30 Km/h with probability 75%
+
+	 Results for tests/pyramid-test/IMG-1272.jpg:
+		QNN predicts 80 Km/h with probability 51%
+
+	 Results for tests/pyramid-test/IMG-1279.jpg:
+		QNN predicts 70 Km/h with probability 59%
+
+	 Results for tests/pyramid-test/IMG-1280.jpg:
+		QNN predicts 20 Km/h with probability 58%
+
+	 Results for tests/pyramid-test/IMG-1283.jpg:
+		QNN predicts 20 Km/h with probability 81%
+
+	 Results for tests/pyramid-test/IMG-1284.jpg:
+		QNN predicts 20 Km/h with probability 72%
+
+	 Results for tests/pyramid-test/IMG-1286.jpg:
+		QNN predicts 20 Km/h with probability 55%
+
+	 Results for tests/pyramid-test/IMG-1287.jpg:
+		QNN predicts 20 Km/h with probability 59%
+
+	 Results for tests/pyramid-test/IMG-1292.jpg:
+		QNN predicts 60 Km/h with probability 69%
+
+	 Results for tests/pyramid-test/IMG-13.jpg:
+		QNN predicts 80 Km/h with probability 51%
+
+	 Results for tests/pyramid-test/IMG-130.jpg:
+		QNN predicts 50 Km/h with probability 77%
+
+	 Results for tests/pyramid-test/IMG-1304.jpg:
+		QNN predicts 30 Km/h with probability 66%
+
+	 Results for tests/pyramid-test/IMG-1306.jpg:
+		QNN predicts 30 Km/h with probability 94%
+
+	 Results for tests/pyramid-test/IMG-1307.jpg:
+		QNN predicts 50 Km/h with probability 93%
+
+	 Results for tests/pyramid-test/IMG-1310.jpg:
+		QNN predicts 80 Km/h with probability 62%
+
+	 Results for tests/pyramid-test/IMG-132.jpg:
+		QNN predicts 50 Km/h with probability 88%
+
+	 Results for tests/pyramid-test/IMG-1320.jpg:
+		QNN predicts 20 Km/h with probability 57%
+
+	 Results for tests/pyramid-test/IMG-1322.jpg:
+		QNN predicts 20 Km/h with probability 75%
+
+	 Results for tests/pyramid-test/IMG-1329.jpg:
+		QNN predicts 20 Km/h with probability 59%
+
+	 Results for tests/pyramid-test/IMG-1331.jpg:
+		QNN predicts 30 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-1332.jpg:
+		QNN predicts 30 Km/h with probability 88%
+
+	 Results for tests/pyramid-test/IMG-1333.jpg:
+		QNN predicts 30 Km/h with probability 62%
+
+	 Results for tests/pyramid-test/IMG-1338.jpg:
+		QNN predicts 30 Km/h with probability 81%
+
+	 Results for tests/pyramid-test/IMG-135.jpg:
+		QNN predicts 60 Km/h with probability 86%
+
+	 Results for tests/pyramid-test/IMG-1357.jpg:
+		QNN predicts Stop with probability 78%
+
+	 Results for tests/pyramid-test/IMG-1358.jpg:
+		QNN predicts 20 Km/h with probability 57%
+
+	 Results for tests/pyramid-test/IMG-1359.jpg:
+		QNN predicts 20 Km/h with probability 54%
+
+	 Results for tests/pyramid-test/IMG-136.jpg:
+		QNN predicts 60 Km/h with probability 61%
+
+	 Results for tests/pyramid-test/IMG-1370.jpg:
+		QNN predicts 30 Km/h with probability 51%
+
+	 Results for tests/pyramid-test/IMG-1371.jpg:
+		QNN predicts 30 Km/h with probability 51%
+
+	 Results for tests/pyramid-test/IMG-1372.jpg:
+		QNN predicts 30 Km/h with probability 82%
+
+	 Results for tests/pyramid-test/IMG-1394.jpg:
+		QNN predicts 30 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-1397.jpg:
+		QNN predicts 60 Km/h with probability 82%
+
+	 Results for tests/pyramid-test/IMG-141.jpg:
+		QNN predicts 30 Km/h with probability 91%
+
+	 Results for tests/pyramid-test/IMG-142.jpg:
+		QNN predicts 30 Km/h with probability 84%
+
+	 Results for tests/pyramid-test/IMG-143.jpg:
+		QNN predicts 30 Km/h with probability 75%
+
+	 Results for tests/pyramid-test/IMG-1433.jpg:
+		QNN predicts Stop with probability 57%
+
+	 Results for tests/pyramid-test/IMG-1435.jpg:
+		QNN predicts 20 Km/h with probability 53%
+
+	 Results for tests/pyramid-test/IMG-15.jpg:
+		QNN predicts 80 Km/h with probability 67%
+
+	 Results for tests/pyramid-test/IMG-150.jpg:
+		QNN predicts 20 Km/h with probability 56%
+
+	 Results for tests/pyramid-test/IMG-152.jpg:
+		QNN predicts 60 Km/h with probability 52%
+
+	 Results for tests/pyramid-test/IMG-153.jpg:
+		QNN predicts 60 Km/h with probability 62%
+
+	 Results for tests/pyramid-test/IMG-154.jpg:
+		QNN predicts 60 Km/h with probability 97%
+
+	 Results for tests/pyramid-test/IMG-162.jpg:
+		QNN predicts 20 Km/h with probability 89%
+
+	 Results for tests/pyramid-test/IMG-168.jpg:
+		QNN predicts 50 Km/h with probability 53%
+
+	 Results for tests/pyramid-test/IMG-175.jpg:
+		QNN predicts 60 Km/h with probability 61%
+
+	 Results for tests/pyramid-test/IMG-179.jpg:
+		QNN predicts 30 Km/h with probability 66%
+
+	 Results for tests/pyramid-test/IMG-180.jpg:
+		QNN predicts 30 Km/h with probability 93%
+
+	 Results for tests/pyramid-test/IMG-182.jpg:
+		QNN predicts 20 Km/h with probability 72%
+
+	 Results for tests/pyramid-test/IMG-194.jpg:
+		QNN predicts 50 Km/h with probability 62%
+
+	 Results for tests/pyramid-test/IMG-212.jpg:
+		QNN predicts 60 Km/h with probability 77%
+
+	 Results for tests/pyramid-test/IMG-213.jpg:
+		QNN predicts 60 Km/h with probability 97%
+
+	 Results for tests/pyramid-test/IMG-220.jpg:
+		QNN predicts 20 Km/h with probability 70%
+
+	 Results for tests/pyramid-test/IMG-30.jpg:
+		QNN predicts 60 Km/h with probability 75%
+
+	 Results for tests/pyramid-test/IMG-31.jpg:
+		QNN predicts 20 Km/h with probability 55%
+
+	 Results for tests/pyramid-test/IMG-311.jpg:
+		QNN predicts 80 Km/h with probability 69%
+
+	 Results for tests/pyramid-test/IMG-325.jpg:
+		QNN predicts 70 Km/h with probability 66%
+
+	 Results for tests/pyramid-test/IMG-346.jpg:
+		QNN predicts 70 Km/h with probability 64%
+
+	 Results for tests/pyramid-test/IMG-350.jpg:
+		QNN predicts 50 Km/h with probability 61%
+
+	 Results for tests/pyramid-test/IMG-351.jpg:
+		QNN predicts 50 Km/h with probability 91%
+
+	 Results for tests/pyramid-test/IMG-352.jpg:
+		QNN predicts 100 Km/h with probability 77%
+
+	 Results for tests/pyramid-test/IMG-368.jpg:
+		QNN predicts 70 Km/h with probability 60%
+
+	 Results for tests/pyramid-test/IMG-38.jpg:
+		QNN predicts 30 Km/h with probability 58%
+
+	 Results for tests/pyramid-test/IMG-389.jpg:
+		QNN predicts 50 Km/h with probability 72%
+
+	 Results for tests/pyramid-test/IMG-392.jpg:
+		QNN predicts 50 Km/h with probability 93%
+
+	 Results for tests/pyramid-test/IMG-394.jpg:
+		QNN predicts 30 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-402.jpg:
+		QNN predicts 120 Km/h with probability 81%
+
+	 Results for tests/pyramid-test/IMG-403.jpg:
+		QNN predicts 70 Km/h with probability 82%
+
+	 Results for tests/pyramid-test/IMG-404.jpg:
+		QNN predicts 120 Km/h with probability 59%
+
+	 Results for tests/pyramid-test/IMG-405.jpg:
+		QNN predicts 70 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-406.jpg:
+		QNN predicts 120 Km/h with probability 87%
+
+	 Results for tests/pyramid-test/IMG-422.jpg:
+		QNN predicts 20 Km/h with probability 61%
+
+	 Results for tests/pyramid-test/IMG-431.jpg:
+		QNN predicts 30 Km/h with probability 65%
+
+	 Results for tests/pyramid-test/IMG-435.jpg:
+		QNN predicts 50 Km/h with probability 98%
+
+	 Results for tests/pyramid-test/IMG-441.jpg:
+		QNN predicts 120 Km/h with probability 87%
+
+	 Results for tests/pyramid-test/IMG-442.jpg:
+		QNN predicts 70 Km/h with probability 86%
+
+	 Results for tests/pyramid-test/IMG-443.jpg:
+		QNN predicts 70 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-444.jpg:
+		QNN predicts 70 Km/h with probability 61%
+
+	 Results for tests/pyramid-test/IMG-445.jpg:
+		QNN predicts 70 Km/h with probability 91%
+
+	 Results for tests/pyramid-test/IMG-446.jpg:
+		QNN predicts 70 Km/h with probability 51%
+
+	 Results for tests/pyramid-test/IMG-454.jpg:
+		QNN predicts 20 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-455.jpg:
+		QNN predicts 20 Km/h with probability 81%
+
+	 Results for tests/pyramid-test/IMG-458.jpg:
+		QNN predicts Stop with probability 57%
+
+	 Results for tests/pyramid-test/IMG-466.jpg:
+		QNN predicts 20 Km/h with probability 72%
+
+	 Results for tests/pyramid-test/IMG-467.jpg:
+		QNN predicts 20 Km/h with probability 71%
+
+	 Results for tests/pyramid-test/IMG-470.jpg:
+		QNN predicts 70 Km/h with probability 95%
+
+	 Results for tests/pyramid-test/IMG-471.jpg:
+		QNN predicts 70 Km/h with probability 57%
+
+	 Results for tests/pyramid-test/IMG-473.jpg:
+		QNN predicts 50 Km/h with probability 86%
+
+	 Results for tests/pyramid-test/IMG-481.jpg:
+		QNN predicts 70 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-482.jpg:
+		QNN predicts 70 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-483.jpg:
+		QNN predicts 70 Km/h with probability 94%
+
+	 Results for tests/pyramid-test/IMG-484.jpg:
+		QNN predicts 70 Km/h with probability 59%
+
+	 Results for tests/pyramid-test/IMG-49.jpg:
+		QNN predicts 20 Km/h with probability 58%
+
+	 Results for tests/pyramid-test/IMG-496.jpg:
+		QNN predicts Stop with probability 92%
+
+	 Results for tests/pyramid-test/IMG-499.jpg:
+		QNN predicts 30 Km/h with probability 69%
+
+	 Results for tests/pyramid-test/IMG-509.jpg:
+		QNN predicts 70 Km/h with probability 63%
+
+	 Results for tests/pyramid-test/IMG-510.jpg:
+		QNN predicts 50 Km/h with probability 55%
+
+	 Results for tests/pyramid-test/IMG-512.jpg:
+		QNN predicts Turn right ahead with probability 93%
+
+	 Results for tests/pyramid-test/IMG-514.jpg:
+		QNN predicts 50 Km/h with probability 53%
+
+	 Results for tests/pyramid-test/IMG-516.jpg:
+		QNN predicts 50 Km/h with probability 74%
+
+	 Results for tests/pyramid-test/IMG-519.jpg:
+		QNN predicts 70 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-520.jpg:
+		QNN predicts 70 Km/h with probability 54%
+
+	 Results for tests/pyramid-test/IMG-521.jpg:
+		QNN predicts 70 Km/h with probability 87%
+
+	 Results for tests/pyramid-test/IMG-523.jpg:
+		QNN predicts 20 Km/h with probability 78%
+
+	 Results for tests/pyramid-test/IMG-526.jpg:
+		QNN predicts 100 Km/h with probability 75%
+
+	 Results for tests/pyramid-test/IMG-528.jpg:
+		QNN predicts 30 Km/h with probability 95%
+
+	 Results for tests/pyramid-test/IMG-529.jpg:
+		QNN predicts 30 Km/h with probability 82%
+
+	 Results for tests/pyramid-test/IMG-533.jpg:
+		QNN predicts Stop with probability 57%
+
+	 Results for tests/pyramid-test/IMG-534.jpg:
+		QNN predicts Stop with probability 76%
+
+	 Results for tests/pyramid-test/IMG-535.jpg:
+		QNN predicts Stop with probability 65%
+
+	 Results for tests/pyramid-test/IMG-536.jpg:
+		QNN predicts Stop with probability 61%
+
+	 Results for tests/pyramid-test/IMG-538.jpg:
+		QNN predicts 30 Km/h with probability 67%
+
+	 Results for tests/pyramid-test/IMG-542.jpg:
+		QNN predicts Stop with probability 89%
+
+	 Results for tests/pyramid-test/IMG-543.jpg:
+		QNN predicts 30 Km/h with probability 60%
+
+	 Results for tests/pyramid-test/IMG-544.jpg:
+		QNN predicts Stop with probability 95%
+
+	 Results for tests/pyramid-test/IMG-548.jpg:
+		QNN predicts Turn right ahead with probability 81%
+
+	 Results for tests/pyramid-test/IMG-551.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-552.jpg:
+		QNN predicts 50 Km/h with probability 91%
+
+	 Results for tests/pyramid-test/IMG-553.jpg:
+		QNN predicts 50 Km/h with probability 98%
+
+	 Results for tests/pyramid-test/IMG-554.jpg:
+		QNN predicts 50 Km/h with probability 90%
+
+	 Results for tests/pyramid-test/IMG-555.jpg:
+		QNN predicts 50 Km/h with probability 55%
+
+	 Results for tests/pyramid-test/IMG-559.jpg:
+		QNN predicts 70 Km/h with probability 67%
+
+	 Results for tests/pyramid-test/IMG-560.jpg:
+		QNN predicts 20 Km/h with probability 69%
+
+	 Results for tests/pyramid-test/IMG-561.jpg:
+		QNN predicts 20 Km/h with probability 77%
+
+	 Results for tests/pyramid-test/IMG-562.jpg:
+		QNN predicts 20 Km/h with probability 70%
+
+	 Results for tests/pyramid-test/IMG-563.jpg:
+		QNN predicts 100 Km/h with probability 51%
+
+	 Results for tests/pyramid-test/IMG-564.jpg:
+		QNN predicts 100 Km/h with probability 74%
+
+	 Results for tests/pyramid-test/IMG-566.jpg:
+		QNN predicts 20 Km/h with probability 74%
+
+	 Results for tests/pyramid-test/IMG-567.jpg:
+		QNN predicts 30 Km/h with probability 93%
+
+	 Results for tests/pyramid-test/IMG-580.jpg:
+		QNN predicts Stop with probability 66%
+
+	 Results for tests/pyramid-test/IMG-581.jpg:
+		QNN predicts Stop with probability 51%
+
+	 Results for tests/pyramid-test/IMG-588.jpg:
+		QNN predicts 50 Km/h with probability 97%
+
+	 Results for tests/pyramid-test/IMG-589.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-590.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-591.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-592.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-599.jpg:
+		QNN predicts 20 Km/h with probability 92%
+
+	 Results for tests/pyramid-test/IMG-600.jpg:
+		QNN predicts 20 Km/h with probability 53%
+
+	 Results for tests/pyramid-test/IMG-602.jpg:
+		QNN predicts 100 Km/h with probability 85%
+
+	 Results for tests/pyramid-test/IMG-618.jpg:
+		QNN predicts Stop with probability 73%
+
+	 Results for tests/pyramid-test/IMG-626.jpg:
+		QNN predicts 50 Km/h with probability 97%
+
+	 Results for tests/pyramid-test/IMG-627.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-628.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-629.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-630.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-631.jpg:
+		QNN predicts 50 Km/h with probability 95%
+
+	 Results for tests/pyramid-test/IMG-632.jpg:
+		QNN predicts 50 Km/h with probability 67%
+
+	 Results for tests/pyramid-test/IMG-637.jpg:
+		QNN predicts 20 Km/h with probability 87%
+
+	 Results for tests/pyramid-test/IMG-639.jpg:
+		QNN predicts 30 Km/h with probability 67%
+
+	 Results for tests/pyramid-test/IMG-640.jpg:
+		QNN predicts 20 Km/h with probability 77%
+
+	 Results for tests/pyramid-test/IMG-645.jpg:
+		QNN predicts 20 Km/h with probability 73%
+
+	 Results for tests/pyramid-test/IMG-66.jpg:
+		QNN predicts 30 Km/h with probability 57%
+
+	 Results for tests/pyramid-test/IMG-665.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-666.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-667.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-668.jpg:
+		QNN predicts 50 Km/h with probability 99%
+
+	 Results for tests/pyramid-test/IMG-669.jpg:
+		QNN predicts 50 Km/h with probability 74%
+
+	 Results for tests/pyramid-test/IMG-670.jpg:
+		QNN predicts 50 Km/h with probability 83%
+
+	 Results for tests/pyramid-test/IMG-678.jpg:
+		QNN predicts 20 Km/h with probability 69%
+
+	 Results for tests/pyramid-test/IMG-679.jpg:
+		QNN predicts 20 Km/h with probability 75%
+
+	 Results for tests/pyramid-test/IMG-68.jpg:
+		QNN predicts 80 Km/h with probability 61%
+
+	 Results for tests/pyramid-test/IMG-680.jpg:
+		QNN predicts 20 Km/h with probability 88%
+
+	 Results for tests/pyramid-test/IMG-681.jpg:
+		QNN predicts 20 Km/h with probability 73%
+
+	 Results for tests/pyramid-test/IMG-693.jpg:
+		QNN predicts 50 Km/h with probability 85%
+
+	 Results for tests/pyramid-test/IMG-698.jpg:
+		QNN predicts 60 Km/h with probability 58%
+
+	 Results for tests/pyramid-test/IMG-704.jpg:
+		QNN predicts 50 Km/h with probability 92%
+
+	 Results for tests/pyramid-test/IMG-705.jpg:
+		QNN predicts 50 Km/h with probability 97%
+
+	 Results for tests/pyramid-test/IMG-706.jpg:
+		QNN predicts 50 Km/h with probability 92%
+
+	 Results for tests/pyramid-test/IMG-707.jpg:
+		QNN predicts 50 Km/h with probability 70%
+
+	 Results for tests/pyramid-test/IMG-708.jpg:
+		QNN predicts 50 Km/h with probability 73%
+
+	 Results for tests/pyramid-test/IMG-712.jpg:
+		QNN predicts 20 Km/h with probability 81%
+
+	 Results for tests/pyramid-test/IMG-714.jpg:
+		QNN predicts 60 Km/h with probability 61%
+
+	 Results for tests/pyramid-test/IMG-717.jpg:
+		QNN predicts 20 Km/h with probability 88%
+
+	 Results for tests/pyramid-test/IMG-718.jpg:
+		QNN predicts 20 Km/h with probability 84%
+
+	 Results for tests/pyramid-test/IMG-719.jpg:
+		QNN predicts 20 Km/h with probability 79%
+
+	 Results for tests/pyramid-test/IMG-720.jpg:
+		QNN predicts 20 Km/h with probability 81%
+
+	 Results for tests/pyramid-test/IMG-742.jpg:
+		QNN predicts 50 Km/h with probability 76%
+
+	 Results for tests/pyramid-test/IMG-743.jpg:
+		QNN predicts 50 Km/h with probability 95%
+
+	 Results for tests/pyramid-test/IMG-744.jpg:
+		QNN predicts 50 Km/h with probability 56%
+
+	 Results for tests/pyramid-test/IMG-746.jpg:
+		QNN predicts 50 Km/h with probability 91%
+
+	 Results for tests/pyramid-test/IMG-755.jpg:
+		QNN predicts 20 Km/h with probability 95%
+
+	 Results for tests/pyramid-test/IMG-756.jpg:
+		QNN predicts 20 Km/h with probability 84%
+
+	 Results for tests/pyramid-test/IMG-757.jpg:
+		QNN predicts 20 Km/h with probability 98%
+
+	 Results for tests/pyramid-test/IMG-758.jpg:
+		QNN predicts 20 Km/h with probability 88%
+
+	 Results for tests/pyramid-test/IMG-76.jpg:
+		QNN predicts 20 Km/h with probability 62%
+
+	 Results for tests/pyramid-test/IMG-782.jpg:
+		QNN predicts 20 Km/h with probability 78%
+
+	 Results for tests/pyramid-test/IMG-793.jpg:
+		QNN predicts 20 Km/h with probability 56%
+
+	 Results for tests/pyramid-test/IMG-795.jpg:
+		QNN predicts 20 Km/h with probability 92%
+
+	 Results for tests/pyramid-test/IMG-8.jpg:
+		QNN predicts 20 Km/h with probability 72%
+
+	 Results for tests/pyramid-test/IMG-815.jpg:
+		QNN predicts 80 Km/h with probability 74%
+
+	 Results for tests/pyramid-test/IMG-817.jpg:
+		QNN predicts 30 Km/h with probability 60%
+
+	 Results for tests/pyramid-test/IMG-818.jpg:
+		QNN predicts 30 Km/h with probability 52%
+
+	 Results for tests/pyramid-test/IMG-821.jpg:
+		QNN predicts 50 Km/h with probability 59%
+
+	 Results for tests/pyramid-test/IMG-822.jpg:
+		QNN predicts 20 Km/h with probability 97%
+
+	 Results for tests/pyramid-test/IMG-824.jpg:
+		QNN predicts 30 Km/h with probability 85%
+
+	 Results for tests/pyramid-test/IMG-826.jpg:
+		QNN predicts 20 Km/h with probability 52%
+
+	 Results for tests/pyramid-test/IMG-831.jpg:
+		QNN predicts 60 Km/h with probability 68%
+
+	 Results for tests/pyramid-test/IMG-832.jpg:
+		QNN predicts 60 Km/h with probability 82%
+
+	 Results for tests/pyramid-test/IMG-86.jpg:
+		QNN predicts 20 Km/h with probability 80%
+
+	 Results for tests/pyramid-test/IMG-860.jpg:
+		QNN predicts 20 Km/h with probability 97%
+
+	 Results for tests/pyramid-test/IMG-862.jpg:
+		QNN predicts 30 Km/h with probability 64%
+
+	 Results for tests/pyramid-test/IMG-87.jpg:
+		QNN predicts 70 Km/h with probability 58%
+
+	 Results for tests/pyramid-test/IMG-885.jpg:
+		QNN predicts 50 Km/h with probability 59%
+
+	 Results for tests/pyramid-test/IMG-900.jpg:
+		QNN predicts 20 Km/h with probability 65%
+
+	 Results for tests/pyramid-test/IMG-901.jpg:
+		QNN predicts 20 Km/h with probability 70%
+
+	 Results for tests/pyramid-test/IMG-902.jpg:
+		QNN predicts 20 Km/h with probability 92%
+
+	 Results for tests/pyramid-test/IMG-903.jpg:
+		QNN predicts 20 Km/h with probability 74%
+
+	 Results for tests/pyramid-test/IMG-92.jpg:
+		QNN predicts 50 Km/h with probability 97%
+
+	 Results for tests/pyramid-test/IMG-93.jpg:
+		QNN predicts 50 Km/h with probability 87%
+
+	 Results for tests/pyramid-test/IMG-940.jpg:
+		QNN predicts 20 Km/h with probability 70%
+
+	 Results for tests/pyramid-test/IMG-944.jpg:
+		QNN predicts 60 Km/h with probability 53%
+
+	 Results for tests/pyramid-test/IMG-959.jpg:
+		QNN predicts 70 Km/h with probability 61%
+
+	 Results for tests/pyramid-test/IMG-960.jpg:
+		QNN predicts 70 Km/h with probability 89%
+
+	 Results for tests/pyramid-test/IMG-988.jpg:
+		QNN predicts 70 Km/h with probability 96%
+
+	 Results for tests/pyramid-test/IMG-990.jpg:
+		QNN predicts 70 Km/h with probability 75%
+
+	 Results for tests/pyramid-test/IMG-993.jpg:
+		QNN predicts 70 Km/h with probability 85%
+
+	 Results for tests/pyramid-test/IMG-994.jpg:
+		QNN predicts 70 Km/h with probability 93%
+
+	 Results for tests/pyramid-test/IMG-996.jpg:
+		QNN predicts 70 Km/h with probability 64%
+
+	 Results for tests/pyramid-test/IMG-997.jpg:
+		QNN predicts 70 Km/h with probability 98%
+
+	 Results for tests/pyramid-test/IMG-998.jpg:
+		QNN predicts 70 Km/h with probability 99%
+
