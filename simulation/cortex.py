@@ -66,13 +66,13 @@ weights[33] = 1 # turn right
 weights[34] = 1 # turn left
 
 
-path = "pics/in/"
-pics = []
-for (dirpath, dirnames, filenames) in walk(path):
-    for filename in filenames:
-        pics.append(path + filename)
-    break
-pics = open_images(pics)
+# path = "pics/in/"
+# pics = []
+# for (dirpath, dirnames, filenames) in walk(path):
+#     for filename in filenames:
+#         pics.append(path + filename)
+#     break
+# pics = open_images(pics)
 
 
 def main():
@@ -81,7 +81,9 @@ def main():
     
     # Keep a running average
     average = [0] * 43
+    folder = 0
     while True:
+        
         print "Drive"
         # sleep(3)
 
@@ -91,7 +93,16 @@ def main():
         ########################################
         # This whole part will be replaced with a single call to a script
         print "Get next picture"
-        # pics = ???
+        path = "pics/demo/" + str(folder) + "/"
+        print path
+        pics = []
+        for (dirpath, dirnames, filenames) in walk(path):
+            for filename in filenames:
+                pics.append(path + filename)
+            break
+        # print pics
+        pics = open_images(pics)
+        
         # fsm = fsm_states[1]
 
         print "Analyse frame with QNN"
@@ -126,7 +137,10 @@ def main():
             print "Wait for daughter card to perform action"
             pcb.receive()
             print "Action performed"
-        break
+
+        folder += 1
+        if folder >= 3:
+            break
 
 
 if  __name__ =='__main__':
