@@ -21,7 +21,7 @@ frame_count = 0
 
 # How will the window be handled?
 window_send = False
-window_save = True
+window_save = False
 window_draw = False
 
 
