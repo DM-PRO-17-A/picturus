@@ -3,7 +3,7 @@ import pickle
 from QNN.layers import *
 
 
-qnn = pickle.load(open("gtsrb-w1a1.pickle", "rb"))
+qnn = pickle.load(open("gtsrb-w1a1-fc.pickle", "rb"))
 
 
 gtsrb_classes = ['20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '70 Km/h', '80 Km/h',
