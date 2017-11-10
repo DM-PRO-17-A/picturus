@@ -12,7 +12,9 @@ class UART(object):
     # https://electrosome.com/uart-raspberry-pi-python/
     # https://groups.google.com/forum/#!topic/pynq_project/pkGXZN4RED0
 
-    
+    # ser = serial.Serial('/dev/ttyAMA0') # ttyAMA0 is UART for RaspPi
+    # ser.baudrate = 19200 # Replace with actual rate
+
     def __init__(self):
         self.ser = serial.Serial("/dev/ttyPS0", baudrate=115200, timeout=3.0) # This might be the correct way for the Pynq?
         print "Initialised"
@@ -20,12 +22,12 @@ class UART(object):
 
     def read(self):
         c = self.ser.read() # Implicitly one byte
-        print c
+        print "Receive: " + c
         return c
 
     
     def write(self, c):
-        print c
+        print "Send: " + c
         self.ser.write(c)
 
 

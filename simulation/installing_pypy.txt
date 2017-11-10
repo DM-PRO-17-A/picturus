@@ -1,3 +1,4 @@
+sudo apt-get update
 sudo apt install pypy
 sudo apt install pypy-dev
 curl -O https://bootstrap.pypa.io/get-pip.py
@@ -6,4 +7,4 @@ sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblc
 pypy -m pip install Pillow
 pypy -m pip install git+https://bitbucket.org/pypy/numpy.git
 
-You will most likely need to use sudo on a lot of these
+You will most likely need to use sudo on a lot/all of these
