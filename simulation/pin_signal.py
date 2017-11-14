@@ -8,6 +8,7 @@ Code only works on Pynq
 from pynq import Overlay
 from pynq.iop import Arduino_IO
 
+
 class Pins(object):
     def __init__():
         out_pins = [Arduino_IO(3, 0, 'out'),
@@ -17,14 +18,14 @@ class Pins(object):
         in_pins = [Arduino_IO(3, 4, 'in'),
                    Arduino_IO(3, 5, 'in')]
 
-        signals = {'f':[1, 0, 0, 0],
-                   'r':[1, 0, 0, 1],
-                   'l':[1, 0, 1, 0],
-                   's':[1, 0, 1, 1],
-                   'u':[1, 1, 0, 0],
-                   '5':[1, 1, 0, 1],
-                   '7':[1, 1, 1, 0],
-                   '1':[1, 1, 1, 1]}
+        signals = {'f':[0, 0, 0], # Drive forward
+                   'r':[0, 0, 1], # Turn right
+                   'l':[0, 1, 0], # Turn left
+                   's':[0, 1, 1], # Stop
+                   'u':[1, 0, 0], # U-turn
+                   '5':[1, 0, 1], # Set speed to "50 km/h"
+                   '7':[1, 1, 0], # Set speed to "70 km/h"
+                   '1':[1, 1, 1]} # Set speed to "100 km/h"
         
 
     def read():
@@ -38,6 +39,6 @@ class Pins(object):
 
         
     def write(c):
-        for i in xrange(len(out_pins)):
+        for i in range(len(out_pins)):
             out_pins[i].write(signals[c][i])
         return signals[c]
