@@ -5,14 +5,15 @@
 #include <string>
 #include <sstream>
 #include <cstdlib>
+#include <Python.h>
 using namespace std;
+static PyObject *
 
 
 
 
 
-int main() {
-
+float* run(PyObject *self, PyObject *args){
 	//Hente data fra fil/BRAM
 	
 	ifstream file;
@@ -89,26 +90,13 @@ int main() {
     };
     // #############################################################################################
     //Write to file
-    ofstream myfile;
-	myfile.open ("./SoftmaxOutput.txt");
-	if (myfile.is_open()) // Leser og setter inn tallene i en array
-  	{
-  		string line;
-		for (int i =0; i < 43; i = i+1){ 
-			std::stringstream stream;
-			stream << fixed << setprecision(15) << out[i];
-			string s = stream.str();
-        	if (i < 42) {
-        		line += s + ",";
-        	}
-		}; 
-		myfile << line;
-	}
-  	else cout << "Unable to open file 2";
+    float* pointer = out;
+
+    return PyLong_FromLong(pointer);
+}
 
 
-	myfile.close();
-
-
-    return 0;
+int main() {
+	run();
+	return 0;
 }
