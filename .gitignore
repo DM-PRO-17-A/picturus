@@ -4,4 +4,6 @@
 *~
 #*
 *.pyc
-simulation/tests/
+simulation/pics/out/
+opencv/img/test/
+opencv/misc/vector.txt

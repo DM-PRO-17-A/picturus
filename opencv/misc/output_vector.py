@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('img.png')
+img = cv2.imread('../img/out.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB);
 
 print('3D list')
@@ -19,4 +19,4 @@ print(oned)
 print(oned.tolist())
 
 f = open('vector.txt', 'w')
-f.write(', '.join(str(v) for v in oned.tolist()))
+f.write(' '.join(str(v) for v in oned.tolist()))
