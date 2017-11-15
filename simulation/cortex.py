@@ -57,9 +57,18 @@ weights[34] = 1 # turn left
 #     break
 # pics = open_images(pics)
 
+def isText():
+    with open("./SoftmaxOutput.txt", 'r') as f:
+        char = f.read()
+        if len(char) > 40:
+            f.close()
+            return True
+    f.close()
+    return False
 
-def getQnnOutput():
-    with open("./SoftmaxOutput.txt") as f:
+def readText():
+    filename = "./SoftmaxOutput.txt"
+    with open(filename, 'r') as f:
         content = f.readlines()
         innput = []
         number = ""
@@ -69,11 +78,20 @@ def getQnnOutput():
                 number = ""
             else:
                 number+=s
+        f.close()
+        print "read"
+        open(filename, 'w').close()
+        return innput
     return False
+
+def getQnnOutput():
+    if isText():
+        readText()
+
+
 
 
 def main():
-    '''
     fsm_states = ("driving", "determine sign", "keep driving", "execute sign", "receive interrupt")
     fsm = fsm_states[0]
     
@@ -102,19 +120,9 @@ def main():
         pics = open_images(pics)
         
         # fsm = fsm_states[1]
-
-        print "Analyse frame with QNN"
+        getQnnOutput()
         
-
-
-        ########################################
-
-    '''
-    getQnnOutput()
-
-
-    '''
-        ###########################
+        # print average.sum()
         # Send a single result per frame
         print "Send result array to daughter card"
         sign, prob = get_most_probable_sign(average)
@@ -134,7 +142,6 @@ def main():
         folder += 1
         if folder >= 3:
             break
-        '''
 
 
 if  __name__ =='__main__':
