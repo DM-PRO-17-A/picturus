@@ -1,14 +1,17 @@
+// What's a makefile
+// g++ video_capture.cpp `pkg-config --libs --cflags opencv` -o vc.out
+
 #include <iostream>
 #include "opencv2/opencv.hpp"
 
-using std;
-using cv;
+using namespace std;
+using namespace cv;
 
 
 int main() {
   // Create a VideoCapture object and open the webcam
   // Index signifies which webcam, use 0 on pynq
-  VideoCapture cap(1);
+  VideoCapture cap(0);
 
   // Check if camera opened successfully
   if (!cap.isOpened()) {
@@ -44,10 +47,10 @@ int main() {
       break;
 
     // Crop image to size
-    frame = frame(Rect(cw, 0, cw, ch));
+    // frame = frame(Rect(cw, 0, cw, ch));
 
     // Convert image to RGB
-    cvtColor(frame, frame, cv::COLOR_BGR2RGB);
+    // cvtColor(frame, frame, cv::COLOR_BGR2RGB);
 
     // Display the resulting frame
     imshow("Frame", frame);
@@ -57,7 +60,7 @@ int main() {
     if (c == 27)
       break;
 
-    cout << 'Frame'
+    cout << "Frame";
   }
 
   // When everything done, release the video capture object
