@@ -9,8 +9,8 @@ OBJS = vc.o
 .PHONY: all
 
 all:
-	$(CXX) $(CXXFLAGS) $(INCLUDES) $(SRCS) -o cv
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(SRCS) -o vc
 
 clean:
-	rm -f cv $(OBJS)
+	rm -f vc $(OBJS)
 	@echo "all cleaned up!"
