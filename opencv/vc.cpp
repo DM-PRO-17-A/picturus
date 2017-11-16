@@ -1,5 +1,6 @@
 // What's a makefile
-// g++ video_capture.cpp `pkg-config --libs --cflags opencv` -o vc.out
+// g++ vc.cpp `pkg-config --libs --cflags opencv` -o vc.out
+// oh, and remember to use sudo when running it you dummy
 
 #include <iostream>
 #include "opencv2/opencv.hpp"
