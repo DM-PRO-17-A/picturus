@@ -29,6 +29,18 @@ struct Sign
 };
 int[2] speed = {0, 0};
 
+std::map <std::string, Sign> signals;
+signals["50 Km/h"] = new Sign;
+signals["70 Km/h"] = new Sign;
+signals["100 Km/h"] = new Sign;
+
+
+int* get_signal( std::string sign )
+{
+	int[4] signal;
+	if ( "50 Km/h" == sign )
+}
+
 
 int main()
 {
@@ -38,13 +50,7 @@ int main()
 
 
 	while ( 1 == get_pcb_btn() );
-	
-	
-	/* In order to write to pins, use:
-	 * t.set_out_pins_n(0/1);
-	 * Where n is a number representing the pin
-	 */
-	
+
 	
 	float[43] average;
 	int i;
