@@ -1,10 +1,12 @@
 #include <string>
+#include <algorithm>
+#include <map>
 // Rosetta stuff in order to use the pins
-#include "TestRegOps.hpp"
+//#include "TestRegOps.hpp"
 #include "platform.h"
 
 
-const string gtsrb_classes[43] = {'20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '70 Km/h', '80 Km/h',
+const std::string gtsrb_classes[43] = {'20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '70 Km/h', '80 Km/h',
                  'End 80 Km/h', '100 Km/h', '120 Km/h', 'No overtaking',
                  'No overtaking for large trucks', 'Priority crossroad', 'Priority road',
                  'Give way', 'Stop', 'No vehicles',
@@ -18,38 +20,57 @@ const string gtsrb_classes[43] = {'20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '7
                  'Turn left ahead', 'Ahead only', 'Ahead or right only',
                  'Ahead or left only', 'Pass by on right', 'Pass by on left', 'Roundabout',
                  'End of no-overtaking zone',
-                 'End of no-overtaking zone for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses'}
+				 'End of no-overtaking zone for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses'};
+
+
+struct Sign
+{
+	int[2] action = {0, 0};
+};
+int[2] speed = {0, 0};
 
 
 int main()
 {
 	// Platform to use pins from
 	WrapperRegDriver * platform = initPlatform();
-	TestRegOps t(platform);
+	AutoSimple t( platform );
+
+
+	while ( 1 == get_pcb_btn() );
+	
+	
 	/* In order to write to pins, use:
-	   t.set_out_pins(n);
-	   Where n is a number that gets translated to binary
-	   E.g.: 12 => 1100
+	 * t.set_out_pins_n(0/1);
+	 * Where n is a number representing the pin
 	 */
 	
-
 	
 	float[43] average;
 	int i;
 	for ( i = 0; i < 43; ++i )
 		average[i] = 0.0;
-
-
-	// Initialise camera program here? Or separately in Bash?
-
+	const int N = sizeof(average) / sizeof(float);
 	
+
 	while(1)
 	{
+		int[2] input = get_input_pins( t );
+		if ( 1 == input[1] )
+			continue;
+
+		
 		// Read from QNN output
-		// float[43] output = QNN_output;
+		float[43] output = get_qnn_output( platform );
 		int i;
 		for ( i = 0; i < 43; ++i )
+		{
+			// Insert logic for calculating most likely sign
 			average[i] += output[i];
+		}
+		int max_index = max_element( average, average + N );
+
+		std::string sign = gtsrb_classes[max_index];
 	}
 	
 
