@@ -1,44 +1,86 @@
+#include <iostream>
 #include <string>
 #include <algorithm>
-#include <map>
+#include <vector>
 // Rosetta stuff in order to use the pins
 //#include "TestRegOps.hpp"
 #include "platform.h"
+#include "fpga_interfacing.hpp"
+
+namespace std;
 
 
-const std::string gtsrb_classes[43] = {'20 Km/h', '30 Km/h', '50 Km/h', '60 Km/h', '70 Km/h', '80 Km/h',
-                 'End 80 Km/h', '100 Km/h', '120 Km/h', 'No overtaking',
-                 'No overtaking for large trucks', 'Priority crossroad', 'Priority road',
-                 'Give way', 'Stop', 'No vehicles',
-                 'Prohibited for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses',
-                 'No entry for vehicular traffic', 'Danger Ahead', 'Bend to left',
-                 'Bend to right', 'Double bend (first to left)', 'Uneven road',
-                 'Road slippery when wet or dirty', 'Road narrows (right)', 'Road works',
-                 'Traffic signals', 'Pedestrians in road ahead', 'Children crossing ahead',
-                 'Bicycles prohibited', 'Risk of snow or ice', 'Wild animals',
-                 'End of all speed and overtaking restrictions', 'Turn right ahead',
-                 'Turn left ahead', 'Ahead only', 'Ahead or right only',
-                 'Ahead or left only', 'Pass by on right', 'Pass by on left', 'Roundabout',
-                 'End of no-overtaking zone',
-				 'End of no-overtaking zone for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses'};
+const vector<string> gtsrb_classes(43) = {"20 Km/h", "30 Km/h", "50 Km/h", "60 Km/h", "70 Km/h", "80 Km/h",
+                 "End 80 Km/h", "100 Km/h", "120 Km/h", "No overtaking",
+                 "No overtaking for large trucks", "Priority crossroad", "Priority road",
+                 "Give way", "Stop", "No vehicles",
+                 "Prohibited for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses",
+                 "No entry for vehicular traffic", "Danger Ahead", "Bend to left",
+                 "Bend to right", "Double bend (first to left)", "Uneven road",
+                 "Road slippery when wet or dirty", "Road narrows (right)", "Road works",
+                 "Traffic signals", "Pedestrians in road ahead", "Children crossing ahead",
+                 "Bicycles prohibited", "Risk of snow or ice", "Wild animals",
+                 "End of all speed and overtaking restrictions", "Turn right ahead",
+                 "Turn left ahead", "Ahead only", "Ahead or right only",
+                 "Ahead or left only", "Pass by on right", "Pass by on left", "Roundabout",
+                 "End of no-overtaking zone",
+				 "End of no-overtaking zone for vehicles with a permitted gross weight over 3.5t including their trailers, and for tractors except passenger cars and buses"};
 
 
-struct Sign
+vector<int> speed(2) = {0, 0};
+
+vector<int> get_signal( std::string sign )
 {
-	int[2] action = {0, 0};
-};
-int[2] speed = {0, 0};
-
-std::map <std::string, Sign> signals;
-signals["50 Km/h"] = new Sign;
-signals["70 Km/h"] = new Sign;
-signals["100 Km/h"] = new Sign;
-
-
-int* get_signal( std::string sign )
-{
-	int[4] signal;
+	vector<int> signal(4);
 	if ( "50 Km/h" == sign )
+	{
+		signal = {0, 1, 0, 0};
+		speed = {0, 1};
+	}
+	else if ( "70 Km/h" == sign )
+	{
+		signal = {1, 0, 0, 0};
+		speed = {1, 0};
+	}
+	else if ( "100 Km/h" == sign )
+	{
+		signal = {1, 1, 0, 0};
+		speed = {1, 1};
+	}
+	else if ( "Turn right ahead" == sign )
+	{
+		signal[0] = speed[0];
+		signal[0] = speed[1];
+		signal[2] = 0;
+		signal[3] = 1;
+	}
+	else if ( "Turn left ahead" == sign )
+	{
+		signal[0] = speed[0];
+		signal[0] = speed[1];
+		signal[2] = 1;
+		signal[3] = 0;
+	}
+	else if ( "No entry for vehicular traffic" == sign )
+	{
+		signal[0] = speed[0];
+		signal[0] = speed[1];
+		signal[2] = 1;
+		signal[3] = 1;
+	}
+	else if ( "Stop" == sign )
+	{
+		signal = {0, 0, 0, 0};
+		speed = {0, 0};
+	}
+	else
+	{
+		signal[0] = speed[0];
+		signal[0] = speed[1];
+		signal[2] = 0;
+		signal[3] = 0;
+	}
+	return signal;
 }
 
 
@@ -46,37 +88,49 @@ int main()
 {
 	// Platform to use pins from
 	WrapperRegDriver * platform = initPlatform();
-	AutoSimple t( platform );
 
 
+	// Wait until start button is pressed
 	while ( 1 == get_pcb_btn() );
 
-	
-	float[43] average;
+
+	// Initialise array for output data
+	vector<float> average(43);
 	int i;
 	for ( i = 0; i < 43; ++i )
 		average[i] = 0.0;
-	const int N = sizeof(average) / sizeof(float);
 	
 
 	while(1)
 	{
-		int[2] input = get_input_pins( t );
+		/* Read input from daughter card 
+		 * If busy, don't process and send new data
+		 */
+		vector<int> input(2) = get_input_pins( platform );
 		if ( 1 == input[1] )
 			continue;
 
 		
-		// Read from QNN output
-		float[43] output = get_qnn_output( platform );
+		// Get QNN output and find most likely sign
+		vector<float> output(43) = get_qnn_output( platform );
 		int i;
 		for ( i = 0; i < 43; ++i )
 		{
-			// Insert logic for calculating most likely sign
+			// TODO: Insert logic for calculating most likely sign
 			average[i] += output[i];
 		}
-		int max_index = max_element( average, average + N );
 
+		// Get most likely sign and send instructions to daughter card
+		int max_index = *max_element( average.begin(), average.end() );
 		std::string sign = gtsrb_classes[max_index];
+		vector<int> signal(4) = get_signal( sign );
+		set_output_pins( platform, signal );
+
+		if ( "Stop" == sign )
+		{
+			cout << "This is the end." << endl;
+			break;
+		}
 	}
 	
 
