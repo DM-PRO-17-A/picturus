@@ -27,34 +27,29 @@ int limit = 10000;
 
 Mat Region(Mat image, Vec3b red, Vec3b blue, int radii[2])
 {
-  int x = image.cols;
-  int y = image.rows;
-  Mat T(y, x, CV_8UC1);
-  for(int i=0;i<y;i++){
-    for(int j=0;j<x;j++){
-      Vec3b rgb=image.at<Vec3b>(i,j);
+  //image.cols = image.size().height = 240 = y
+  //image.rows = image.size().width = 432 = x
+  Mat T(image.rows, image.cols, CV_8UC1);
+  for(int y=0;y<image.cols;y++) { //y
+    for(int x=0;x<image.rows;x++) { //x
+      Vec3b rgb=image.at<Vec3b>(x,y);
       int reddist = Distance(rgb, red);
       int bluedist = Distance(rgb, blue);
-      if(reddist < radii[0] || bluedist < radii[1])
-      {
-        T.at<unsigned char>(i,j) = 255;
-      }
-      else
-      {
-        T.at<unsigned char>(i,j) = 0;
+      if(reddist < radii[0] || bluedist < radii[1]) {
+        T.at<unsigned char>(x,y) = 255;
+      } else {
+        T.at<unsigned char>(x,y) = 0;
       }
     }
-  }
-  return T;
+  } return T;
 }
 
 Mat CropRegion(Mat image, Mat T, int limit)
 {
-  Mat mat, crop;
   dilate(T, T, getStructuringElement(MORPH_ELLIPSE, Size(3, 3)));
   dilate(T, T, getStructuringElement(MORPH_ELLIPSE, Size(3, 3)));
   dilate(T, T, getStructuringElement(MORPH_ELLIPSE, Size(3, 3)));
-  mat = T.clone();
+  Mat mat = T.clone();
   floodFill(mat, Point(0,0), Scalar(255));
   bitwise_not(mat, mat);
   T = (T | mat);
@@ -62,39 +57,31 @@ Mat CropRegion(Mat image, Mat T, int limit)
   double dM01 = oMoments.m01;
   double dM10 = oMoments.m10;
   double dArea = oMoments.m00;
-  if (dArea > limit)
-  {
+  if (dArea > limit) {
     int posX = dM10 / dArea;
     int posY = dM01 / dArea;
-    //int i = posX;
-    //cout << i << endl;
-    //while((int)T.at<uchar>(i,posY) < 50)
-    //{
-    //  i++;
-    //}
-    //int radius = int(i/3) - posX;
-    //int radius = int(i/3) - posX;
-    //int radius = sqrt(dArea/M_PI)/9;
     int radius = sqrt(dArea/3)/9;
     int x = posX-radius;
     int y = posY-radius;
     int s = 2*radius;
-    Mat crop = image.clone();
-    line(crop, Point(x,y), Point(x+s,y), Scalar(255, 255, 255), 1, 8);
-    line(crop, Point(x,y+s), Point(x+s,y+s), Scalar(255, 255, 255), 1, 8);
-    line(crop, Point(x,y), Point(x,y+s), Scalar(255, 255, 255), 1, 8);
-    line(crop, Point(x+s,y), Point(x+s,y+s), Scalar(255, 255, 255), 1, 8);
-    cout << x << " " << y << " " << s << endl;
-    //crop = image(Rect(x, y, s, s));
+    
+    if (x+s >= image.cols-1 || x < 0) {
+      Mat crop(2, 2, CV_8UC3, Scalar(0,0,0));
+      return crop;
+    }
+    else if (y+s >= image.rows-1 || y < 0) {
+      Mat crop(2, 2, CV_8UC3, Scalar(0,0,0));
+      return crop;
+    }
+    else {
+      Mat crop = image(Rect(x, y, s, s));
+      return crop;
+    }
+  } 
+  else {
+    Mat crop(2, 2, CV_8UC3, Scalar(0,0,0));
     return crop;
   }
-  else {
-    //crop = T(Rect(50, 50, 32, 32));
-    Mat T(image.cols, image.rows, CV_8UC1);
-    return T;
-  }
-  //mat.release();
-  //return crop;
 }
 
 int Distance(Vec3b color1, Vec3b color2)
@@ -113,15 +100,12 @@ Mat Preprocessing(Mat image, Vec3b red, Vec3b blue, int radii[2], int limit)
 {
   Mat reg = Region(image, red, blue, radii);
   Mat crop = CropRegion(image, reg, limit);
-  //reg.release();
-  //Mat res;
-  //resize(crop, res, cvSize(32, 32), 0, 0, CV_INTER_AREA );
-  //crop.release();
-  //reg.release();
+  //resize(crop, res, cvSize(49, 49), 0, 0, CV_INTER_AREA );
   return crop;
 }
 
-int main() {
+int main() 
+{
   // Create a VideoCapture object and open the webcam
   // Index signifies which webcam, use 0 on pynq
   VideoCapture cap(0);
@@ -134,7 +118,7 @@ int main() {
 
   int w = 432;
   int h = 240;
-  int fps = 5;
+  int fps = 10;
 
   //int ch = 180;
   //int cw = 216;
@@ -144,12 +128,13 @@ int main() {
   cap.set(CV_CAP_PROP_FPS, fps);
   //cout << cap.get(CV_CAP_PROP_FRAME_WIDTH) << endl;
   //int count_frame = 1;
-
   //int winSize = 32;
 
-
+  int count = 0;
   while (1) {
     Mat frame;
+    count++;
+    const string name = "images/image_"+to_string(count)+".jpg";
 
     // Capture frame-by-frame
     cap >> frame;
@@ -161,16 +146,32 @@ int main() {
 
     // Crop image to size
     //frame = frame(Rect(cw, 0, cw, ch));
+
     Mat cropped;
     cropped = Preprocessing(frame, red, blue, radii, limit);
     if (cropped.empty())
       continue;
-
-    // Convert image to RGB
-    // cvtColor(frame, frame, cv::COLOR_BGR2RGB);
-
+    if (cropped.rows < 5) {
+      cropped.release();
+      Mat crop(32, 32, CV_8UC3, Scalar(0,0,0));
+      imshow("Cropped", crop);
+    }
+    else {
+      Mat crop;
+      resize(cropped, crop, cvSize(32, 32), 0, 0, CV_INTER_AREA );
+      //imwrite(name, cropped);
+      imshow("Cropped", crop);
+      vector<int> V;
+      if (crop.isContinuous()) {
+        V.assign(crop.datastart, crop.dataend);
+      } 
+      else {
+        for (int i = 0; i < crop.rows; ++i) {
+          V.insert(V.end(), crop.ptr<uchar>(i), crop.ptr<uchar>(i)+crop.cols);
+        }
+      }
+    }
     // Display the resulting frame
-    imshow("Cropped", cropped);
     imshow("Frame", frame);
 
     // Press  ESC on keyboard to exit
