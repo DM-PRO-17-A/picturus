@@ -117,7 +117,7 @@ import ctypes
 # bridge = ctypes.cdll.LoadLibrary('./misc/test_queue.so')
 
 # Initialize video capture with camera at index
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # Counters for timers and filenames
 frame_count = 0
@@ -165,6 +165,14 @@ frame_cap = 500
 if frame_save:
     frame_cap = 1
 
+def rotateImage(image, angle):
+    center = tuple(np.array(image.shape)[:2]/2) # 2d !
+    rot_mat = cv2.getRotationMatrix2D(center,angle,1.0)
+    result = cv2.warpAffine(image, rot_mat, image.shape[:2],flags=cv2.INTER_LINEAR)
+
+    return result
+
+
 while(frame_count < frame_cap):
     # Capture frame-by-frame
 
@@ -184,6 +192,8 @@ while(frame_count < frame_cap):
     if frame_save:
         cv2.imwrite('./img/test/2_cropped.jpg'.format(frame_count), frame)
 
+    frame = rotateImage(frame, 90)
+    
     # Display the resulting frame
     cv2.imshow('Capturing', frame)
 
@@ -206,7 +216,16 @@ while(frame_count < frame_cap):
         continue
     cv2.imwrite('./img/test/f{}.jpg'.format(frame_count), p)
 
-    print(gtsrb_predict(p))
+    
+    out = gtsrb_predict(p.flatten())
+    temp = -1
+    index = -1
+    for i in xrange(43):
+        if out[i] > temp:
+            temp = out[i]
+            index = i
+        
+    print(gtsrb_classes[index])
 
     time_per_handle = timeit.default_timer() - time_per_handle
     frame_count += 1
